@@ -1,1 +1,1 @@
-Sitemap: https://lnnrtwttkhn.github.io/quarto-article/sitemap.xml
+Sitemap: https://mjxstowe.github.io/quarto-article-template/sitemap.xml
