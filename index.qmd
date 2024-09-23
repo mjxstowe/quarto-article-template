@@ -1,8 +1,53 @@
 ---
-title: "{{< var title >}}"
-subtitle: "{{< var subtitle >}}"
-date: today
+title: "A peer-led, decentralized mobile model to enhance access to hepatitis C point-of-care testing and treatment" # edit your title
+short-title: "Short title" # edit your short title
+subtitle: "(Original research article)"
 engine: knitr
-abstract: "This is the abstract."
-abstract-title: "Abstract"
+date: today
+author:
+- name: MJ Stowe
+  affiliations: 
+    - id: unsw
+      name: The Kirby Institute, UNSW, Sydney, Australia
+      department: The Kirby Institute
+      address: "Level 5, Wallace Wurth Building, UNSW, Randwick"
+      city: Sydney  
+      region: NSW
+      country: Australia
+      postal-code: 30303
+  orcid: 0000-0002-3948-3914
+  url: https://www.kirby.unsw.edu.au/
+  email: mjstowe@kirby.unsw.edu.au
+  attributes:
+    corresponding: true
+  correspondence-prefix: "Correspondence concerning this article should be addressed to"
+- name: Louisa Degenhardt
+  affiliation: The National Drug & Alcohol Research Centre (NDARC), UNSW Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: louisa.degenhardt
+- name: Jason Grebely
+  affiliation: The Kirby Institute, UNSW Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: jgrebely@!kirby.unsw.edu.au
+abstract: |
+  **Background:** Community-based, socially responsive peer-led approaches to hepatitis C (HCV) testing and treatment can improve access, increase uptake, and overcome barriers to care. We examined the feasibility of a decentralized mobile peer-delivered test and treat intervention integrating peer-delivered point-of-care HCV RNA testing and peer-facilitated linkage to care. **Methods:** Peers On Wheels (POW) is an observational cohort study of a peer-led mobile model to expand point-of-care HCV testing to people with recent injecting drug use recruited between July 2022 and May 2023 at 11 locations in New South Wales, Australia. The study was co-designed and implemented by a peer-based organisation representing people who use drugs. Participants received incentives, point-of-care HCV antibody (Abbott Bioline) and RNA testing (Xpert HCV Viral Load Fingerstick) text message or upon return to the service), and peer-assisted linkage to care and treatment. The proportion of people accepting HCV testing and initiating HCV treatment were assessed. **Results:** Between July 2022 – September 2023, 674 participants were enrolled and received an HCV (either antibody or RNA) point of care test. Of these, X (X%) were male, X (X%) homeless, X (XX%) were receiving opioid agonist treatment, XX (XX%) had injected drugs ever and XX (XX%) had injected drugs in the past month. Among those with current HCV (n=53), XX (XX%) were linked to care and XX (XX%) initiated treatment. Reasons for not initiating treatment included loss to follow-up (n=XX), XX, and XX. **Conclusions:** A peer-led mobile model led to a high acceptance of point-of-care HCV testing among people at risk of HCV infection, with XX% initiating treatment. This peer-led mobile model facilitated an expanded reach of testing and diagnosis, but further strategies should be explored to facilitate enhanced linkage to care and treatment.
 ---
+***
+
+#### Study oversight
+
+All participants provided written informed consent before study procedures. The study protocol and amendments were approved by the Human Research Ethics Committees at St Vincent’s Hospital, Sydney (HREC Ref: ) and the Aboriginal Health and Medical Research Council (HREC Ref: ). This study was conducted according to the Declaration of Helsinki and International Conference on Harmonization Good Clinical Practice (ICH/GCP) guidelines.
+
+#### Role of the funding source
+
+The study was funded by a grant from NSW Health and a research grant from the National Health and Medical Research Council (2013921) and the Medical Research Futures Fund (MRRART000099). This study was also supported by research grants from Gilead Sciences Pty Ltd and Cepheid (provided GeneXpert platforms and testing). The funders had no role in the study design, data collection, analysis, interpretation of the results, the writing of the report or the decision to submit the report for publication. JG, CH and MJS had access to the raw data. The sponsor (The Kirby Institute, UNSW Sydney) co-designed the study with the NSW Users and AIDS Association (NUAA). NUAA collected the data, managed study samples, monitored study conduct, and performed the required quality assurance measures on the GeneXpert system. JG, CH, MH, and MJS were responsible for the decision to submit for publication.
+
+
+#### Code
+
+All the raw code and data for this paper is available in a [GitHub
+repository](https://github.com/mjxstowe).
+
+
+
+

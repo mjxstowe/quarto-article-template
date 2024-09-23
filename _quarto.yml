@@ -7,20 +7,55 @@ project:
     watch-inputs: true
     navigate: true
 author:
-- id: wittkuhn
+- id: mjstowe
   name:
-    given: Lennart
-    family: Wittkuhn
-    literal: Dr. Lennart Wittkuhn
+    given: MJ
+    family: Stowe
+    literal: MJ Stowe
   url: "{{< var homepage >}}"
   email: "{{< var email >}}"
   orcid: "{{< var orcid >}}"
   attributes:
     corresponding: true
   affiliations:
-    - ref: uhh-psych
-    - ref: mpib
-    - ref: mps-ucl
+    - ref: kirby
+    - ref: sanpud
+website:
+  repo-url: "https://github.com/mx-jx"
+  repo-actions: [edit, issue]
+
+  page-navigation: true
+  bread-crumbs: false
+
+  navbar:
+    pinned: true
+    background: "#E9DEFC"
+    search: true
+    left:
+      # - text: "Experiment"
+      #   file: notebook/survey-experiment.qmd
+      # - text: "Methods & Models"
+      #   file: notebook/marginal-means.qmd
+      # - text: "Results"
+      #   file: notebook/results.qmd
+      - text: "Manuscript"
+        file: notebook/manuscript.qmd
+
+    right:
+      - icon: github
+        aria-label: github
+        href: https://github.com/andrewheiss/silent-skywalk
+
+  page-footer:
+     left: |
+       Content {{< fa brands creative-commons >}} 2024 by MJ Stowe<br>
+       All content licensed under a {{< fa brands creative-commons >}}
+       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
+       [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+     right: |
+       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+       [View the source at {{< fa brands github >}} GitHub](https://github.com/mjxstowe)
+
 format:
   html:
     # format options:
