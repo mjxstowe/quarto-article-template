@@ -1,6 +1,6 @@
-title: "Quarto Article"
+title: "Quarto Article Template"
 subtitle: "A personal template for Quarto articles"
-project-name: "quarto-article"
+project-name: "quarto-article-template"
 source: "https://github.com/mjxstowe/{{< var project-name >}}"
 # website: "https://lennartwittkuhn.com/{{< var project-name >}}"
 issues: "https://github.com/mjxstowe/{{< var project-name >}}/issues"

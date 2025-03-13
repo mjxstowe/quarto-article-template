@@ -21,7 +21,7 @@ author:
     - ref: kirby
     - ref: sanpud
 website:
-  repo-url: "https://github.com/mx-jx"
+  repo-url: "https://github.com/mjxstowe/quarto-article-template"
   repo-actions: [edit, issue]
 
   page-navigation: true
@@ -31,24 +31,24 @@ website:
     pinned: true
     background: "#E9DEFC"
     search: true
-    left:
+    # left:
       # - text: "Experiment"
       #   file: notebook/survey-experiment.qmd
       # - text: "Methods & Models"
       #   file: notebook/marginal-means.qmd
       # - text: "Results"
       #   file: notebook/results.qmd
-      - text: "Manuscript"
-        file: notebook/manuscript.qmd
+      # - text: "Manuscript"
+        # file: notebook/manuscript.qmd
 
     right:
       - icon: github
         aria-label: github
-        href: https://github.com/andrewheiss/silent-skywalk
+        href: https://github.com/mjxstowe/quarto-article-template
 
   page-footer:
      left: |
-       Content {{< fa brands creative-commons >}} 2024 by MJ Stowe<br>
+       Content {{< fa brands creative-commons >}} 2025 by MJ Stowe<br>
        All content licensed under a {{< fa brands creative-commons >}}
        {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
        [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -88,7 +88,7 @@ format:
     code-link: false
     code-annotations: true
     code-tools:
-      source: "https://github.com/lnnrtwttkhn/quarto-article"
+      source: "https://github.com/mjxstowe/quarto-article-template"
       toggle: true
       caption: "Code"
     highlight-style: monokai
