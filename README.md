@@ -33,5 +33,6 @@ Just click the green **Use this template** button to get started.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributors
+[MJ Stowe](mailto:mjstowe@kirby.unsw.edu.au)
 
-[Lennart Wittkuhn](mailto:lennart.wittkuhn@tutanota.com)
+Adapted from [Lennart Wittkuhn's](mailto:lennart.wittkuhn@tutanota.com) [Quarto Article Template](https://github.com/lnnrtwttkhn/quarto-article

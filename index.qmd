@@ -1,7 +1,9 @@
 ---
-title: "A peer-led, decentralized mobile model to enhance access to hepatitis C point-of-care testing and treatment" # edit your title
-short-title: "Short title" # edit your short title
-subtitle: "(Original research article)"
+# title: "A peer-led, decentralized mobile model to enhance access to hepatitis C point-of-care testing and treatment" # edit your title
+# short-title: "Short title" # edit your short title
+# subtitle: "(Original research article)"
+title: "{{< var title >}}"
+subtitle: "{{< var subtitle >}}"
 engine: knitr
 date: today
 author:
@@ -29,8 +31,57 @@ author:
   affiliation: The Kirby Institute, UNSW Sydney, Australia
   orcid: xxxx-xxxx-xxxx 
   email: jgrebely@!kirby.unsw.edu.au
+- name: Briallen Lloyd
+  affiliation: The NSW Users  & AIDS Association (NUAA), sYDNEY
+  orcid: xxxx-xxxx-xxxx 
+  email: xx@nuaa.org.au
+- name: Rodd Hinton
+  affiliation: The NSW Users  & AIDS Association (NUAA)
+  orcid: xxxx-xxxx-xxxx 
+  email: xx@nuaa.org.au
+- name: Kylie Hull
+  affiliation: The NSW Users  & AIDS Association (NUAA)
+  orcid: xxxx-xxxx-xxxx 
+  email: xx@nuaa.org.au
+- name: Kate Patton
+  affiliation: NSW ministry of Health
+  orcid: xxxx-xxxx-xxxx 
+  email: xx@nuaa.org.au
+- name: Lucy Pepolim
+  affiliation: The NSW Users  & AIDS Association (NUAA)
+  orcid: xxxx-xxxx-xxxx 
+  email: scomben@kirby.unsw.edu.au
+- name: Meghan Macdonald
+  affiliation: The Kirby Institute, UNSW Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: scomben@kirby.unsw.edu.au
+- name: Melanie Kingsland
+  affiliation: The Kirby Institute, UNSW Sydney, Australia'
+  orcid: xxxx-xxxx-xxxx              
+  email: scomben@kirby.unsw.edu.au
+- name: Alex Wade
+  affiliation: The Kirby Institute, UNSW Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: scomben@kirby.unsw.edu.au
+- name: Evan Cunningham
+  affiliation: The Kirby Institute, UNSW Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: xx@nuaa.org.au
+- name: Mary Ellen Harrod
+  affiliation: The NSW Users & AIDS Association (NUAA), Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: xx@nuaa.org.au
+- name: Charles Henderson 
+  affiliation: The NSW Users  & AIDS Association (NUAA), Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: xx@nuaa.org.au
+- name: Jason Grebely
+  affiliation: The Kirby Institute, UNSW Sydney, Australia
+  orcid: xxxx-xxxx-xxxx 
+  email: jgrebely@!kirby.unsw.edu.au
 abstract: |
   **Background:** Community-based, socially responsive peer-led approaches to hepatitis C (HCV) testing and treatment can improve access, increase uptake, and overcome barriers to care. We examined the feasibility of a decentralized mobile peer-delivered test and treat intervention integrating peer-delivered point-of-care HCV RNA testing and peer-facilitated linkage to care. **Methods:** Peers On Wheels (POW) is an observational cohort study of a peer-led mobile model to expand point-of-care HCV testing to people with recent injecting drug use recruited between July 2022 and May 2023 at 11 locations in New South Wales, Australia. The study was co-designed and implemented by a peer-based organisation representing people who use drugs. Participants received incentives, point-of-care HCV antibody (Abbott Bioline) and RNA testing (Xpert HCV Viral Load Fingerstick) text message or upon return to the service), and peer-assisted linkage to care and treatment. The proportion of people accepting HCV testing and initiating HCV treatment were assessed. **Results:** Between July 2022 – September 2023, 674 participants were enrolled and received an HCV (either antibody or RNA) point of care test. Of these, X (X%) were male, X (X%) homeless, X (XX%) were receiving opioid agonist treatment, XX (XX%) had injected drugs ever and XX (XX%) had injected drugs in the past month. Among those with current HCV (n=53), XX (XX%) were linked to care and XX (XX%) initiated treatment. Reasons for not initiating treatment included loss to follow-up (n=XX), XX, and XX. **Conclusions:** A peer-led mobile model led to a high acceptance of point-of-care HCV testing among people at risk of HCV infection, with XX% initiating treatment. This peer-led mobile model facilitated an expanded reach of testing and diagnosis, but further strategies should be explored to facilitate enhanced linkage to care and treatment.
+  
 ---
 ***
 
@@ -48,6 +99,642 @@ The study was funded by a grant from NSW Health and a research grant from the Na
 All the raw code and data for this paper is available in a [GitHub
 repository](https://github.com/mjxstowe/quarto-article-template).
 
+\newpage
+<!-- new page -->
 
+# Abstract {#abstract}
+  **Background:** Community-based, socially responsive peer-led approaches to hepatitis C (HCV) testing and treatment can improve access, increase uptake, and overcome barriers to care. We examined the feasibility of a decentralized mobile peer-led test and treat intervention integrating peer-operated point-of-care HCV RNA testing and peer-facilitated linkage to care.
+  
+  **Methods:** Peers On Wheels (POW) is an observational cohort study of a peer-led mobile model to expand point-of-care HCV testing to people with recent injecting drug use recruited between July 2022 and May 2023 at 11 locations in New South Wales, Australia. The study was co-designed and implemented by a peer-based organisation representing people who use drugs. Participants received incentives, point-of-care HCV antibody  and RNA testing, a text message or upon return to the service, and peer-assisted linkage to care and treatment. The proportion of people accepting HCV testing and initiating HCV treatment were assessed. 
+  
+  **Results:** Between September 2022 – May 2023, 674 participants were enrolled. Of these, the median age was 45 years, 264 (43%) were female, 367 (60%) identified as Aboriginal, 153 (25%) were receiving opioid agonist treatment and  XX (XX%) had injected drugs ever and XX (XX%) had injected drugs in the past month. Among those offered an HCV test, XX% (n=XX) accepted testing and XX% (n=XX) were HCV RNA detectable. Among those with current HCV (n=53), XX (XX%) were linked to care and XX (XX%) initiated treatment. Reasons for not initiating treatment included loss to follow-up (n=XX), XX, and XX. 
+  
+  **Conclusions:** A peer-led mobile model led to a high number of point-of-care HCV testing among people at risk of HCV infection, with XX% initiating treatment. This peer-led mobile model facilitated an expanded reach of testing and diagnosis, but further strategies should be explored to facilitate enhanced linkage to care and treatment.
+date: July 10, 2024
+
+---
+
+```{r setup, include=FALSE}
+if (is.null(knitr::pandoc_to())) {
+  fmt_out <- "interactive"
+} else {
+  fmt_out <- knitr::pandoc_to()
+}
+
+knitr::opts_chunk$set(
+  echo = FALSE, include = FALSE,
+  warning = FALSE, message = FALSE
+)
+
+knitr::opts_chunk$set(
+  fig.align = "center", fig.retina = 3,
+  fig.width = 6, fig.height = (6 * 0.618),
+  out.width = "100%", collapse = TRUE
+)
+
+options(
+  digits = 3, width = 120,
+  dplyr.summarise.inform = FALSE
+)
+```
+
+
+# Introduction {.unnumbered}
+
+The World Health Organization has set a goal to eliminate hepatitis C virus (HCV) infection as a major public health threat by 2030, with targets to increase HCV diagnoses and treatment, and reduce new infections and liver-related deaths (WHO, 2017). However, despite strong early treatment uptake [@alavi2019] , annual treatment numbers have declined and data now suggests that for Australia to achieve hepatitis C elimination, testing rates must increase by at least 50% among people who inject drugs [@scott2020]. Increasing uptake of HCV testing and treatment is hampered by lack of appropriate testing modalities and inaccessible models of service provision, limited support along current diagnostic pathways, and exposure to drug-related stigma and discrimination, amplified in key populations, such as people who inject drugs [@grebely2017; @madden2018; @gibbs2021]
+
+Although the availability of point-of-care testing for the detection of active HCV infection in one hour [@lamouryEvaluationXpertHCV2018; @grebely2017] has improved HCV clinical management, globally [@lamouryEvaluationXpertHCV2018; @grebely2017; @draper2020; @macisaac2024; @shih2023; @sheehan2023; @grebely2024; @mccartneyPointofCareTestingHepatitis2024; @trickeyImpactHepatitisVirus2023] significant barriers to HCV testing and treating exist [@grebely2024]. Despite studies demonstrating that point-of-care HCV RNA testing and treatment is associated with increased test acceptability [@bajis2017], reductions in loss to follow-up and enhanced treatment uptake [@alavi2019; @iversen2019; @mccartneyPointofCareTestingHepatitis2024; @trickeyImpactHepatitisVirus2023], testing and treatment in community-based settings still remains inaccessible to marginalized and underserved populations of people who use drugs [@demant2023]. Although studies have evaluated mobile HCV clinics [@demant2023; @midgard2022; @ryan2021; @rennert2024], few studies have evaluated models in which HCV RNA and antibody testing is performed by peers and accompanied by peer-facilitated linkage to care. 
+
+In addition to peer-led strategies to enhance testing, interventions are required to enhance engagement and maintenance in care for people with ongoing injecting drug use [@cunningham2022]. Peer-assisted linkage to care (also called peer-support) across all stages of the treatment pathway has been demonstrated to be an important intervention to facilitate HCV testing, linkage to care/treatment, and maintained engagement in care [@crawford2013; @grebely2023; @henderson2017' @treloar2015; @ward2019]). Peer-assistance at all stages of the cascade of care creates an opportunity for relatedness, knowledge sharing, trust and rapport, and allows for the introduction of wider psychosocial support mechanisms and avenues for health-promotion [@crawford2013; @surey2019; @surey2021; @satinsky2021].
+
+This study presents the results of an interventional cohort study evaluating a decentralized mobile peer-led test and treat intervention integrating peer-operated point-of-care HCV RNA testing, peer-assisted linkage to care.
+
+# Methods {.unnumbered}
+
+## Study design and participants {.unnumbered}
+
+In this observational cohort study, we enrolled participants through a peer-led mobile model consisting of peer-supported engagement, financial incentives, point-of-care HCV testing, and linkage to care and treatment among people at risk of HCV infection or attending a service providing care for people at risk of HCV infection. Participants were enrolled via community-based outreach activities at XX sites in New South Wales, Australia from September 2022 to May 2023 including X (n=X), X (n=X), and X (n=X). Study sites included X sites in Hunter New England Local Health            District, X in South-east Sydney Local Health District and X sites in Mid-North Coast Local Health District (Figure 2a-c)
+
+Participants were 18 years or older and had a risk factor for the acquisition of HCV infection (including current or past injecting drug use, previous incarceration, engagement with community-services, indigenous and diagnoses with a substance use disorder or other psychiatric condition) or were attending a service caring for people with risk factors for the acquisition of HCV infection. This project was conducted as a sub-study of the National Australian HCV Point-of-Care Testing Program, an observational cohort study evaluating point-of-care HCV testing scale-up in Australia [@grebely2024].
+
+## Model of care development {.unnumbered}
+
+The Peers on Wheels project was led, developed, and implemented by a peer-based organisation representing people who use and inject drugs, the New South Wales Users and AIDS Association (NUAA) through a co-design process including researchers (The Kirby institute, UNSW), health policy makers (New South Wales Health), service providers, and people who use drugs. Project governance included a steering committee consisting of representatives from each organisation that met fortnightly to design the study protocol, approve plans for data analysis and provide implementation oversight.
+
+The campaign schedule and local logistics were organized by NUAA. Site locations for testing campaigns were identified and selected by peers with local expertise and knowledge (part of the NUAA peer network) in consultation with local health districts. Criteria for site location selection included the identification of localised areas where people who inject drugs could be reached or were known to visit and where accessible HCV testing and treatment was suboptimal. Knowledge generated through consultation with local peers and networks of people who use drugs was leveraged to identify fieldwork locations prior to each campaign. Site locations were also informed by the need to set up a welcoming area for people to understand what was happening, and to accommodate testing equipment and treatment processes. In addition to peer workers from Sydney, a local peer that was part of the NUAA peer network who was familiar with the local area was employed for the duration of the fieldwork within a particular location to ensure local expertise and knowledge.
+
+Substantive work for each campaign was carried out to prior to visiting each site location. This included regular communication with key personnel within the local health district (e.g. service managers, health promotion workers) and those involved in the management of HCV care (e.g. nurses, physicians, specialists) to develop pathways to e, 1-2 peer point-of-care testing operators (who were trained in point-of-care HCV antibody testing and RNA testing using a GeneXpert instrument), a local peer, and at least one person from the local health district. For the purposes of this project, “peers’ were defined by a range of characteristics including, people with lived and living experience OF injecting drug use and viral hepatitis, connection with a drug-user social identity, and relatedness to communities of people who use drugs [@greer2016; @greer2018]. Prior to implementation of the project, project staff (i.e. peers) were trained to undertake point-of-care HCV antibody and RNA testing through theoretical and practical training (online and remotely) provided by the International Centre for Point-of-Care Testing at Flinders University. In total, four peers were trained as operators of the GeneXpert instrument and as qualified to administer a point-of-care HCV test.
+
+## Study setting {.unnumbered}
+
+Between Septemeber 2022 and 23 August 2023, X sites were visited across three local health districts in New South Wales, Australia, including Hunter New England (urban/regional), Mid-North Coast (regional) and South Eastern Sydney (urban) (see @fig-1). Fieldwork campaigns ranged from three to five days at a given location with multiple campaigns being held within each local health district. Fieldwork occurred in a range of spaces and services, including pharmacies where people accessed drug treatment, district hospitals, car parks in front of community services, community service hubs, parks in the community, allied services and private locations proposed by participants (e.g., private houses). Services were provided via drop-in visits and no appointments were required.
+
+## Procedures {.unnumbered}
+
+The project was advertised generally two weeks preceding the events with posters in local clinics and other services (including the details of when and where the campaign was occurring), referral through health services (e.g. wallet cards), website and NUAA communication channels and via word of mouth. Recruitment within each campaign spanned one to five days at each site location concurrent with defined pathways for linkage to HCV care and treatment. The mobile and flexible nature of the model often allowed for multiple sites to be visited in a single day.
+
+Enrolment assessments included peer-administered behavioural questionnaires on tablet computers (demographics, behavioural risk, and previous HCV testing and treatment) and peer-administered point-of-care HCV antibody testing (Abbott Bioline HCV, City, Country) and/or point-of-care HCV RNA testing \[Xpert HCV Viral Load Fingerstick Assay (Cepheid, Sunnyvale, United States; lower limit of quantification 100 IU/ml, upper limit of quantification 108 log10 IU/ml; 100% sensitivity, 100% specificity)\]. A peer collected a capillary whole-blood sample from participants via a fingerstick (Safety Lancet, Super Blade \[Order Number 85.1018\], Sarstedt, Nümbrecht, Germany) using procedures recommended by the WHO (WHO, 2010) and collected into a 100-uL minivette collection tube (Minivette POCT 100μl K3E \[Order number 17.2113.101\], Sarstedt, Nümbrecht, Germany). Immediately following collection, 100 uL of capillary whole blood was placed directly into the Xpert HCV VL Fingerstick assay cartridge (lower limit of quantification of 100 IU/mL; Cepheid, Sunnyvale) for on-site HCV RNA testing. The cartridge was loaded into the GeneXpert instrument which uses real-time PCR (rt-PCR) technology that enables the quantification of HCV RNA levels (Cepheid, 2019). The time to result for Xpert HCV VL Fingerstick testing is 58 minutes. All Xpert HCV Viral Load assay testing were performed on a clinic-based GeneXpert R2 6-colour, 4 module machine (GXII-2-L System, GeneXpert Dx software v4.6a; Cepheid, Sunnyvale) operated as per the manufacturer’s instructions (Cepheid, 2019).
+
+Initially, point-of-care HCV RNA testing was immediately performed for all participants. However, after a review of data demonstrating a lower-than-expected prevalence of current HCV infection during the first two campaigns in Hunter New England Local Health District (XX site locations), the protocol was revised in Month XXXX so that all participants without a history of HCV treatment received point-of-care HCV antibody with reflex point-of-care HCV RNA testing and participants who had previously received treatment received immediate point-of-care HCV RNA testing.
+
+While waiting for the HCV RNA test result, participants could access food and refreshments, sterile injecting equipment, overdose education and naloxone, sexual health resources, and harm reduction supplies. During this time, a peer would engage with the participant about available services offered by NUAA such as their online NSP shop with state-wide postal delivery. Nominated staff from the respective LHDs were provided to support and assist with testing on the day. All participants were compensated at completion of an HCV antibody or HCV RNA test (AUD\$20 cash), initiation (AUD\$20 cash) and completion (AUD\$20 cash) of treatment.
+
+Participants with detectable HCV RNA were offered a clinical assessment with a nurse or appropriate healthcare professional to assess suitability for DAA therapy and linked to a peer support worker when such support was available. Participants deemed not suitable for treatment under this simplified model of care were referred for follow-up through standard of care. NUAA’s Treatment Assisted Pathway Consent process (Model of Care) is an important component of this treatment pathway approach whereby NUAA obtained consent to maintain contact and assist the participant in treatment navigation, treatment initiation, and treatment completion.
+
+Arrangements were put in place with a local pharmacy to facilitate streamlined dispensing of DAA therapy. Following clinical assessment and a decision to initiate DAA therapy, the project PI would contact a physician via telephone to arrange a script and an email would be sent to the pharmacy to allow medication dispensing (with a hard copy of the script delivered the next day). The medication was either directly dispensed to the client at the pharmacy or the nurse or peer would pick up the medication from the pharmacy for collection at the NSP by the client.
+
+A dedicated peer worker provided education and engagement. This peer played a pivotal role in the study and was responsible for several components including facilitating health promotion activities, leading engagement in testing as people were accessing services (e.g., people accessing pharmacies for dosing as part of opioid agonist treatment), providing a bridge between participants and clinical support-staff at the service, providing expertise and support for the completion of research survey, and providing ongoing support for participants who initiated treatment through weekly communication and follow-up. Follow-up was done via telephone calls or in-person.
+
+## Outcomes {.unnumbered}
+
+The primary outcome was the number of people who received point-of-care HCV testing. Secondary outcomes included the proportion of people with current HCV infection (HCV RNA detected with the Xpert HCV Viral Load Fingerstick assay) and among those with current HCV infection, the proportion linked to HCV care and initiating HCV treatment within 12 weeks of enrolment.
+
+## Statistical analysis {.unnumbered}
+
+Categorical data were summarized and reported as N (%), continuous data as median (interquartile range \[IQR\]). Analyses of the primary outcome and the cascade of care were performed among all HCV RNA positive participants. Proportions with detectable HCV RNA (viremic prevalence) were reported among all participants with a valid point-of-care test result. Analysis was conducted in R version 4.2.2 using the gtsummary v. 1.7.2
+
+The analytical approach received input from and was reviewed by people who use drugs with lived and living experience of injecting drug use and viral hepatitis. Advice and perspectives were provided on the inclusion of explanatory variables and the clinical and practical significance of the findings.
+
+## Study oversight {.unnumbered}
+
+All participants provided written informed consent before study procedures. The study protocol and amendments were approved by the Human Research Ethics Committees at St Vincent’s Hospital, Sydney (HREC Ref: HREC/17/SVH/113) and the Aboriginal Health and Medical Research Council (HREC Ref: 1279/17). This study was conducted according to the Declaration of Helsinki and International Conference on Harmonization Good Clinical Practice (ICH/GCP) guidelines.
+
+## Role of the funding source {.unnumbered}
+
+The study was funded by a grant from NSW Health and a research grant from the National Health and Medical Research Council (2013921) and the Medical Research Futures Fund (MRRART000099). This study was also supported by research grants from Gilead Sciences Pty Ltd and Cepheid (provided GeneXpert platforms and testing). The funders had no role in the study design, data collection, analysis, interpretation of the results, the writing of the report or the decision to submit the report for publication. JG, CH and MJS had access to the raw data. The sponsor (The Kirby Institute, UNSW Sydney) co-designed the study with the NSW Users and AIDS Association (NUAA). NUAA collected the data, managed study samples, monitored study conduct, and performed the required quality assurance measures on the GeneXpert system. JG, CH, and MJS were responsible for the decision to submit for publication.
+
+# Results {.unnumbered}
+
+## Participant characteristics {.unnumbered}
+
+Overall, 674 participants were enrolled and tested. (@fig-1). The median age was 45 years, 43% (264 of 674) were female, 60% (367 of 674) identified as Aboriginal and/or Torres Straight Islander, and 25% (153 of 674) were receiving OAT (@tbl-summary-characteristics). Overall, 29% (n=197) of people had injected in last six months, 19% (n=127) of people had injected ever, but not in the last six months and 52% (n=350) had never injected drugs (@tbl-summary-characteristics).
+
+Among those who had injected drugs in the previous six month (n=197), 51% (79 of 154) had injected drugs \>=daily in the previous month. Commonly injected drugs in the previous month included methamphetamine (60%), heroin (32%), other opioids (6%), cocaine (1%) and benzodiazepines (1%).
+
+## HCV testing {.unnumbered}
+
+Overall, 674 participants were enrolled and received a point-of-care HCV test (@fig-1). HCV testing and treatment characteristics stratified by injecting is presented in (@tbl-summary-characteristics). Among the 674 participants receiving point-of-care HCV testing, 84% (n=563) of participants received an HCV antibody test, 21% (113 of 563) testing HCV antibody positive, and XX% (XX of 103) received a reflex point-of-care HCV RNA test. The remaining 20% (n=119) received immediate point-of-care HCV RNA testing (self-reported previous HCV infection or previous HCV treatment). Overall, among 218 HCV RNA tests performed, 3% (n=19) and 0.8% (n=5) of tests returned an error or invalid, respectively.
+
+<!-- There are two paragraphs on HCV antibodies; 1) results from the HCV antibody tests carried out in this study; and 2) the estimated HCV antibody prevalence that estimated HCV antibodies among all treatment eligible participants -->
+
+Overall, HCV antibodies were detected in 21% (113 of 563) of participants and was higher among people who had injected in the last 6 months, (39%, 77 of 197, P=X.XXX), and people who had injected ever, but not in the last six months (22%, 28 of 127, P=X.XXX) compared to people who had never injected drugs (2%, 8 of 350, P=X.XXX).
+
+The estimated HCV antibody prevalence determined as participants who self-reported previous and current HCV infection, being told they had HCV infection, cleared the virus spontaneously and HCV RNA detected in the point-of-care test was 33% (221 of 674). The estimated HCV antibody prevalence  
+higher among people who had injected in last six month (73%, 144 of 197, P<0.001), and people who had injected ever, but not in the last six months (53%, 67 of 127, P=X.XXX) compared to people who had never injected drugs (3%, 10 of 350, P=X.XXX).
+
+Overall, the HCV RNA prevalence was 8% (53 of 674). The HCV RNA prevalence was higher among people who had injected in last six month (19%, 37 of 197, P<0.001), and people who had injected ever, but not in the last six months (10%, 13 of 127, P=X.XXX) compared to people who had never injected drugs (1%, 3 of 350, P=X.XXX).
+
+Among all people with current infection (i.e. detectable HCV RNA ; n=53), 19% (n=7) had previously received HCV treatment (@tbl-summary-stratified-by-injecting).
+
+## Awareness of HCV infection status {.unnumbered}
+
+Among all participants, XX% (n=XXX/XXX) were aware of their HCV infection status (Table X). After excluding participants who were never tested (n=165) and who did not report a status (n=XXX), the agreement between self-reported and laboratory results was XX% (XXX/XXX) (Table X). Awareness was higher among those not currently infected (HCV RNA undetectable) (XX%, n=XXX/XXX) compared to those with current HCV infection (XX%, n=XXX/XXX) (Table X).
+
+## HCV treatment uptake  {.unnumbered}
+
+Among 53 people with detectable HCV, 25% (10 of 53) initiated DAA treatment through the study. Among these 10 participants, the median age was 51 years, 40% (4 of 10) were female, and 10% (1 of 10) had injected drugs in the previous month.
+
+# Discussion {.unnumbered}
+
+This study examined the feasibility of a peer-led mobile model to expand access to point-of-care HCV testing and treatment among people at risk of HCV infection in the community in New South Wales, Australia. Overall, 674 participants were enrolled and tested. The estimated HCV antibody prevalence was XX% and HCV RNA prevalence was XX%. Awareness of infection status was suboptimal, particularly among those with current infection. The proportion of people linked to treatment was XX%. This study demonstrates a high engagement in testing and supports the feasibility of community-led testing by peer-workers. These data highlighting the feasibility of implementing a peer-led, mobile decentralized test and treat intervention with peer-operated point-of-care HCV RNA testing will guide clinical practice to implement similar models internationally. This study supports health policy by providing evidence to support the inclusion of peer-operated point-of-care HCV RNA testing in local, national, and international viral hepatitis strategy guidelines. However, further work is needed to understand barriers and enablers of HCV testing and treatment to design interventions to support linkage to HCV treatment.
+
+The estimated HCV antibody and RNA prevalence in this study was XX% and XX% respectively. These estimates are similar to other studies in community settings across Australia (ref). consistent with othother estimates from similar community-based settings acriss Australia derived in similar populations in. Among people weho inject drugs, either within the last six months or ever, the HCV antibody prevalence was XX% and the HCV RNA XX%.
+
+The treatment uptake observed in this study (19%) is lower than in studies evaluat pingint-of-care HCV RNA testing in mobile clinics (74%) (O’Loan, et al., 2021), supervised consumption facilities (89% - XX) (@macisaac2024), NSP (63-84%) (Howell, et al., 2022; Shilton, et al., 2022), community-based settings (79-91%) (Draper, et al., 2021; Ralton, et al., 2021), and prisons (93%) (@sheehan2023) (Sheehan, et al., 2021). This study had peers leading all aspects of the study, including stakeholder engagement, study enrollment, point-of-care HCV antibody testing and HCV RNA testing using the GeneExpert system. While having peers positioned to perform these roles had numerous benefits, doing so also came with it's own set of challenges. Traditionally, peers have been excluded from clinical roles and spaces, so having peers present in a clinical role for this study could've posed challenges along the treatment pathway. Further, working across three different local health districts with different processes added additional steps to the treatment pathway. 
+
+This study has limitations. Given that participants were recruited from sites within New South Wales, Australia, the results of this study may not be applicable to all HCV treatment settings and populations of people who inject drugs. Unfortunately, information on the number of people approached for this study was not collected, so it was not possible to assess the reach of the study in terms of the proportion of people who were approached and accepted HCV testing. Further, participants received AUD\$20 cash reimbursement for receiving an HCV test, AUD\$20 for initiating treatment (if HCV RNA detected) and AUD\$20 for completion of treatment, which may have provided additional incentive to return for follow-up and led to an increased treatment uptake in the study. Despite the renumeration, treatment uptake in this study was suboptimal, with rates below other studies providing mobile, peer-supported point-of-care HCV RNA testing (@demant2023; @midgard2022; etc) (Demant et al., 2023; Midgaard et al., 2022; O’Loan, et al., 2021; Ralton, et al., 2021). Rates of treatment uptake were impacted by the complex landscape of service providers across New South Wales, many also part of Australia’s National Point of Care Program, and the need to ensure appropriate treatment pathways across different models of service provision. There were also logistical and financial constraints, that limited the number of participants recruited into the study and resulted in a smaller than anticipated sample size and limited the power to investigate factors associated with detectable HCV RNA (which is why these results are presented only descriptively).
+
+The findings from this study have important clinical, research, and policy implications. In order to achieve hepatitis C elimination, innovative approaches to improve testing and treatment among people who inject drugs are required. We demonstrate the success of a real-world model of care incorporating fingerstick HCV RNA PoCT and access to DAA therapy in engaging high-risk individuals in hepatitis C care. Such models of care allow higher numbers of people living with hepatitis C to be diagnosed, cured, and avoid the long-term sequelae of hepatitis C associated liver disease. The demonstration that a decentralized, peer-led mobile testing and treatment model is feasible has the potential to guide clinical practice for point-of-care HCV RNA testing for management of HCV infection. Furthermore, our findings support incorporating recommendations for increased availability and adoption of PoCT technology into national and international clinical guidelines, hepatitis C elimination strategies and health policies. Recently, the Australia government, along with industry sponsors and key stakeholders have funded the implementation of the National Hepatitis C Point-of-care Testing Program, which aims to provide scaled-up point-of-care antibody and RNA testing across a range of community-based sites throughout Australia (@grebely2023) (Grebely et al., 2023b). In addition, findings offer guidance around how peer-support and peer-led point-of-care testing is integrated into health service delivery. Although several mobile HCV clinics are operational within the National Australian HCV Point-of-Care Testing Program (@grebely2023) (Grebely et al. 2023), a randomised controlled trial comparing peer-led HCV point-of-care testing, peer-support throughout the treatment pathway, and standard of care among PWID accessing community-based health and support services with embedded health economic evaluation will provide critical information on the effectiveness, acceptability, and cost-effectiveness of the most effective testing strategy in community-based settings. Such programs will be crucial to ongoing identification of key facilitators and barriers to testing and treatment uptake, as well as inform the feasibility of future models of care incorporating point of care testing across a range of global settings. Further, drawing on implementation science and undertaking process mapping will provide insight into key intersections across the diagnostic pathway that contribute to suboptimal outcomes, promoting a reflective and responsive approach that will help to overcome identified barriers. Furthermore, our findings support incorporating recommendations for increased availability and adoption of PoCT technology into national and international clinical guidelines, hepatitis C elimination strategies and health policies. Recently, the Australia government, along with industry sponsors and key stakeholders have funded the implementation of the National Hepatitis C Point-of-care Testing Program, which aims to provide scaled-up point-of-care antibody and RNA testing across a range of community-based sites throughout Australia (@grebely2023).
+
+# Conclusion {.unnumbered}
+
+In conclusion, the Peers on Wheels study provides proof-of-concept data of the feasibility of a mobile, decentralized peer-led test and treat intervention integrating peer-run point-of-care HCV RNA testing, peer-facilitated linkage to care, and peer-supported engagement and delivery among people with recent injecting drug use initiating HCV therapy at community-based health services. Although the proportion of people who initiated treatment was lower than previous studies, the proportion who engaged with the service and were tested was high. An additional limitation of this study was the small sample size, thereby limiting the conclusions that can be drawn from these data. Further research is needed to evaluate the potential of peer-led point-of-care HCV RNA testing and other testing modalities (e.g. dried blood spot testing and point-of-care antibody testing) as potential strategies to simplify and enhance HCV testing, linkage to care, and treatment. This includes understanding the barriers to and acceptability of uptake and integration of point-of-care HCV RNA testing in different services for people who inject drugs. Understanding the effectiveness, acceptability, implementation challenges, and cost-effectiveness of different point-of-care testing strategies and other interventions to improve treatment completion and retention will be critical to inform implementation, funding, and integration into policy and practice to achieve HCV elimination as a major global public health threat.
+
+# Acknowledgements {.unnumbered}
+
+Mim (Kombi Clinic) provided insight and support on aspects of service provision. The Flinders University point of care testing program team provided technical support and training.
+
+# Open Science Statement {.unnumbered}
+
+All scripts and data used in the analysis are available on [OSF](https://osf.io/uc5qy/) and [Github](https://github.com/mx-jx/peers-on-wheels), following the format provided by the rrtools package [@rrtools].
+
+# Author Contributions {.unnumbered}
+
+To be written.
+
+# Competing interests {.unnumbered}
+
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest. Gregory J. Dore provided expert advice.
+
+# Funding {.unnumbered}
+
+The study was funded by a research grant from X. This study was also supported by research grants from Gilead Sciences Pty Ltd and Cepheid (provided GeneXpert platforms and testing). The funders had no role in the study design, data collection, analysis, interpretation of the results, the writing of the report or the decision to submit the report for publication. JG, CH and MJS had access to the raw data. The sponsor (The Kirby Institute, UNSW Sydney) co-designed the study with the NSW Users and AIDS Association (NUAA). NUAA collected the data, managed study samples, monitored study conduct, and performed the required quality assurance measures on the GeneXpert system. JG, CH, and MJS were responsible for the decision to submit for publication. This study was also supported by research grants from Gilead Sciences Pty Ltd and Cepheid (provided GeneXpert platforms and testing).
+
+# Data Availability Statement {.unnumbered}
+
+This publication involved information collected from consenting individuals. Data used for this research cannot be deposited on servers other than those approved by Ethics Committees. This publication has used highly sensitive health information through the collection of survey data. All identifying information, including full name, has been anonymized under strict privacy regulations. Except in the form of conclusions drawn from the data, researchers do not have permission to disclose any data to any person other than those authorized for the research project.
+
+# Conflict of interest {.unnumbered}
+
+JG reports grants from Camurus, grants from Cepheid, grants from Hologic, grants from Indivior, grants from Merck, during the conduct of the study; grants and personal fees from Abbvie, grants and personal fees from Gilead Sciences, grants and personal fees from Merck, grants and personal fees from Cepheid, outside the submitted work. GD reports grants from Gilead, Abbvie, and Merck. LD has received investigator-initiated untied educational grants for studies of opioid medications in Australia from Indivior, Mundipharma and Seqirus. All remaining authors have no potential conflicts to declare.
+
+# Financial support {.unnumbered}
+
+The opinions expressed in the paper are those of the authors and do not necessarily represent those of Cepheid. This study was also supported in part by a research grant from the Australian Department of Health. The Kirby Institute is also funded by the Australian Department of Health. The views expressed in this publication do not necessarily represent the position of the Australian Government. JG is supported by an NHMRC Investigator Grant (1176131). GJD is supported by an NHMRC Practitioner Fellowship. LD is supported by a National Institute of Health National Institute on Drug Abuse grant (R01DA1104470).
+
+# Ethics statement {.unnumbered}
+
+This work was approved by the following ethics committees: Human Research Ethics Committee at St Vincent’s Hospital Sydney (HREC Ref: HREC/17/SVH/113); Aboriginal Health and Medical Research Council (AHMRC Ref: 1279/17).
+
+::: {.content-visible when-profile="ms"}
+\newpage
+\begingroup
+\singlespacing
+\parindent 0pt
+
+\parskip 2ex \def\enotesize{\normalsize} \theendnotes \endgroup \newpage
+:::
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
+
+```{r package-citations, include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'dplyr', "ggplot2", "here", 'knitr', 'rmarkdown', 'gt', 'gtsummary', 'finalfit', 'rrtools', 'renv', 'sf', 'leaflet', 'quarto', 'rmarkdown', 'readr', 'skim'
+), 'packages.bib')
+
+```
+
+\newpage
+
+# Tables and Figures {.unnumbered}
+
+
+```{r load-packages}
+# Load the packages required for the analysis. If packages haven't been installed yet, use install.packages() followed by the library() function.
+#
+# Another way to load packages is through the pacman package using the p_load() function.
+
+pacman::p_load(
+  broom, # tidy code
+  readxl, # read in excel files
+  pacman, # loading and reading in packages
+  rio, # importing data
+  janitor, # data cleaning and tables
+  lubridate, # working with dates
+  matchmaker, # dictionary-based cleaning
+  tidyverse, # data management and visualization
+  gtsummary, # logistic regression and plotting results
+  gt, # for gtsummary
+  flextable, # table creation and manipulating
+  kableExtra,
+  haven,
+  here,
+  webshot,
+  webshot2,
+  grateful,
+  spelling,
+  finalfit,
+  dplyr,
+  usethis,
+  quarto,
+  rmarkdown,
+  cli, 
+  scales, 
+  tidybayes, 
+  patchwork,
+  colorspace, 
+  targets
+)
+
+
+
+library(gtsummary)
+# install.packages('huxtable')
+# install.packages('openxlsx')
+library(huxtable)
+library(openxlsx)
+
+
+
+```
+
+```{r}
+
+# Tables and Figures {#sec-tab-fig}
+#|label: theme
+# Create a theme for figures, tables and all processed text
+
+apa_theme <- function(ft) {
+  ft %>%
+    flextable::font(fontname = "Arial", part = "all") %>%
+    flextable::fontsize(size = 10, part = "all") %>%
+    flextable::align(align = "left", part = "all") %>%
+    flextable::align(align = "left", part = "header") %>%
+    # flextable::rotate(rotation = "lrtb", align = "top", part = "body") %>%
+    flextable::border_remove() %>%
+    flextable::hline_top(border = officer::fp_border(width = 1.5), part = "all") %>%
+    flextable::hline_bottom(border = officer::fp_border(width = 1.5), part = "all") %>%
+    flextable::hline_bottom(border = officer::fp_border(width = 1.5), part = "header") %>%
+    flextable::hline_bottom(border = officer::fp_border(width = 1.5), part = "footer") %>%
+    flextable::hline_bottom(border = officer::fp_border(width = 2), part = "all") %>%
+    flextable::autofit()
+}
+```
+
+```{r load-data-01}
+# LOAD DATA ---------------------------------------------------------------
+# load the data previously generated from R script {which I am having trouble finding at the moment. 2024-05-08}
+
+# load the recoded variables and dervied data
+load(here::here("data", "derived_data", "peersonwheels_factors.rda"))
+load(here::here("data", "derived_data", "pow_factors.rda"))
+load(here::here("data", "derived_data", "pow_all_datasets.rda"))
+load(here::here("data", "derived_data", "pow_deduplicated.rda"))
+load(here::here("data", "derived_data", "hcv_ab_data.rda"))
+
+# load functions and scripts
+source(here("R/funs_tables.R"))
+source(here("R/funs_plots.R"))
+source(here("R/funs_graphics.R"))
+```
+
+\newpage
+
+<!-- new page -->
+
+\blandscape <!-- make the page landscape -->
+
+## Tables {.unnumbered}
+
+<!-- Table 1 -->
+
+```{r}
+# Summary characteristics ------------------------------------------------
+# [Table 1. Sociodemographic characteristics of participants in this study (n=) measured at baseline. ]
+summary_table <- data %>%
+  tbl_summary(
+    include = c(
+      age,
+      age_group,
+      gender.factor,
+      indigenous,
+      homeless,
+      prison_grouped_6month,
+      curoat_yn.factor,
+      oat_status,
+      oat_med,
+      drug_injecting,
+      injany,
+      injecting_experience,
+      injecting_drug_group,
+      injecting_frequency_grouped
+    ),
+    type = all_dichotomous() ~ "dichotomous",
+    missing = "no",
+    label = list(age ~ "Age",
+                 age_group ~ "Age group",
+                 gender.factor ~ "Gender",
+                 homeless ~ "Homeless",
+                 indigenous ~ "Indigenous",
+                 prison_grouped_6month ~ "Incarceration",
+                 curoat_yn.factor ~ "Currently receiving OAT",
+                 oat_status ~ "OAT experience",
+                 drug_injecting ~ "Recent drug injecting (< 6 months)",
+                 injecting_drug_group ~ "Drug type inejcted",
+                 injany ~ "Drug injecting history",
+                 oat_med ~ "OAT medication",
+                 injecting_frequency_grouped ~ "Recent drug injecting frequency (< 30 days)"),
+    # percent = "row",
+    statistic = list(all_continuous() ~ ("{median} ({p25} - {p75})"), stat_0 = "{n}")
+  ) %>%
+  add_stat_label() %>%
+  bold_labels()%>%
+  modify_header(stat_0 = "**Total no. of** \n  **participants (n = {N})**") %>%
+  as_gt()%>%
+tab_style(
+    style = cell_text(v_align = "top"),
+    locations = cells_body()
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "grey90"),
+    locations = cells_row_groups()
+  ) %>%
+  tab_footnote(
+    footnote = "Data are n (%), or median (IQR). OAT=opioid agonist therapy. *Homelessness was defined as spending majority of nights in the last month in no usual residence, a shelter or squat. ^Includes methadone, buprenorphine, codeine and other pharmaceutical opioids") %>%
+  opt_footnote_marks(marks = "standard") %>%
+  opt_horizontal_padding(3) %>%
+  opts_theme() %>%
+  as_raw_html()
+  # tab_options(
+    # quarto.disable_processing = TRUE)
+
+
+# make_tbl_quarto_robust <- function(tbl) {
+#   # Get tbl html code (without the inline stuff)
+#   tbl_html <- tbl |>
+#     as_raw_html(inline_css = FALSE) 
+  
+#   # Find table id
+#   tbl_id <-  str_match(tbl_html, 'id="(.*)"\\s')[,2] 
+  
+#   # Split html so that we only replace strings in the css part at first
+#   # That's important for performance
+#   split_html <- tbl_html |> 
+#     str_split_1('<table class="gt_table".{0,}>')
+#   css_part <- split_html[1] |> 
+#     str_split_1('<style>')
+  
+#   # Create regex to add table id
+#   my_regex <- str_c('(', tbl_id, ' )?(.* \\{)')
+#   replaced_css <- css_part[2] |>
+#     # Make global html changes more specific
+#     str_replace_all('html \\{', str_c(tbl_id, ' .gt_table {')) |> 
+#     # Make changes to everything specific to the table id
+#     str_replace_all(my_regex, str_c('\\#', tbl_id, ' \\2')) |> 
+#     # Replace duplicate names 
+#     str_replace_all(
+#       str_c('\\#', tbl_id, ' \\#', tbl_id),
+#       str_c('\\#', tbl_id)
+#     )
+  
+#   # Put split html back together
+#   str_c(
+#     css_part[1], '<style>', 
+#     replaced_css, '<table class="gt_table">', 
+#     split_html[2]
+#   ) |> 
+#     # Rename all gt_* classes to new_gt_*
+#     str_replace_all('(\\.|class="| )gt', '\\1new_gt') |> 
+#     # Reformat as html
+#     html()
+# }
+
+# library(knitr)
+# knit_print.gt <- function(x, ...) {
+#   stringr::str_c(
+#     "<div style='all:initial';>\n", 
+#     make_tbl_quarto_robust(x), 
+#     "\n</div>"
+#   ) |> 
+#     knitr::asis_output()
+    
+# }
+# registerS3method(
+#   "knit_print", 'gt_tbl', knit_print.gt, 
+#   envir = asNamespace("gt") 
+#   # important to overwrite {gt}s knit_print
+# )
+
+
+```
+
+<!-- Table 1 -->
+
+```{r, echo=FALSE, include=TRUE}
+#| label: tbl-summary-characteristics
+#| tbl-cap: Baseline characteristics. 
+
+summary_table 
+
+# summary_table.ft <- summary_table %>%
+# as_flex_table() %>%
+# apa_theme()
+
+# summary_table.ft
+```
+
+```{r, include=TRUE, echo=FALSE, results='asis'}
+
+# library(finalfit)
+# clean_data_frame %>% 
+#   summary_factorlist(dependent = "has_hcv_antibodies", 
+#                      explanatory = 
+#                        c("injecting_experience", "injany"), 
+#                        p = TRUE, p_cat = "fisher", na_include=TRUE, add_dependent_label=TRUE)-> t1
+# knitr::kable(t1, align=c("l", "l", "r", "r", "r"))
+
+
+# library(tidyverse)
+# library(finalfit)
+
+# Specify explanatory variables of interest
+# explanatory <- c("injecting_experience", "injany")
+
+# t1 <-clean_data_frame %>% 
+#   summary_factorlist("has_hcv_antibodies", explanatory,
+#                      p=TRUE, na_include=TRUE, add_dependent_label=TRUE) 
+
+
+# table1
+
+ # Save objects for knitr/markdown
+# save(table1, explanatory, 
+#      file = here::here("data", "out.rda"))                    
+
+
+
+```
+
+<!-- Table 2 -->
+
+\newpage
+\blandscape
+
+```{r}
+# Summary characteristics of HCV variables stratified by injecting history ---------------------------------------------------------------------------
+# [Table 2. Sociodemographic characteristics of participants in this study (n ]
+
+# Table of number of RNA and HCV tests
+# Participants ever and all tests of HCV (ab and RNA)
+
+summary_stratified_by_injecting <-
+  data %>%
+  tbl_summary(
+    by = injecting_experience,
+    include = c(
+      ever_hcv_test,
+      ever_hcvab_test,
+      hcvrna_test_ever,
+      hcv_status,
+      hcv_treat_ever,
+      hcvab_test_receieved,
+      hcvab_test_result,
+      hcvrna_test_receieved,
+      hcv_rna_result,
+      treat_init,
+      has_hcv_antibodies
+    ),
+    label = list(
+      ever_hcv_test ~ "Ever received an HCV test (either RNA or antibody)",
+      ever_hcvab_test ~ "Self-reported history of ever receiving an
+      HCV antibody test",
+      hcvrna_test_ever ~ "Self-reported history of ever receiving an HCV RNA test",
+      hcv_status ~ "Self-reported HCV infection status",
+      hcv_treat_ever ~ "Self-reported having ever received HCV treatment",
+      hcvab_test_receieved ~ "HCV antibody test received",
+      hcvab_test_result ~ "HCV antibody test result",
+      hcvrna_test_receieved ~ "HCV RNA test received",
+      hcv_rna_result ~ "HCV RNA test result",
+      treat_init ~ "Initiatied treatment"
+    ),
+    missing = "no",
+    percent = "row",
+    statistic = all_continuous() ~ ("{median} ({p25} - {p75})"),
+    digits = list(all_categorical() ~ c(0))
+  ) %>%
+  # add_p() %>%
+  add_overall(statistic = list(
+    all_continuous()  ~ "{median} ({p25} - {p75})",
+    all_categorical() ~ "{n}"
+  )) %>%
+  modify_header(
+    stat_0 = "**Total no. of** \n  **participants (n = {N})**",
+    stat_1 = "**Injected (< 6 months)** \n  **(n = {n})**",
+    stat_2 = "**Injected (> 6 months)** \n  **(n = {n})**",
+    stat_3 = "**Never injected** \n  **(n = {n})**"
+  ) %>%
+  modify_footnote(update = everything() ~ NA, abbreviation = FALSE) %>%
+  remove_row_type(variable = hcvab_test_result,
+                  type = "level",
+                  level_value = "Invalid") %>%
+  bold_labels()  
+
+#  As flextable
+
+# summary_stratified_by_injecting_ft <- summary_stratified_by_injecting %>%
+#   as_flex_table()%>%
+#   theme_apa() %>%
+#   line_spacing(part = "all") %>%
+#   padding(padding.top = 5, padding.bottom = 5)
+# summary_stratified_by_injecting_ft  
+```
+
+```{r, echo=FALSE, include=TRUE}
+#| label: tbl-summary-stratified-by-injecting
+#| tbl-cap: Baseline characteristics stratified by injecting experience. 
+ 
+# kableExtra::kable(summary_table)
+
+# summary_stratified_by_injecting %>%
+#   as_flex_table()%>%
+# flextable::theme_booktabs()
+
+summary_stratified_by_injecting %>%
+  as_gt()%>%
+tab_style(
+    style = cell_text(v_align = "top"),
+    locations = cells_body()
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "grey90"),
+    locations = cells_row_groups()
+  ) %>%
+  tab_footnote(
+    footnote = "Data are n (%), or median (IQR)") %>%
+  opt_footnote_marks(marks = "standard") %>%
+  opt_horizontal_padding(3) %>%
+  opts_theme() 
+```
+
+\newpage
+
+## Figures {.unnumbered}
+
+<!-- {{< pagebreak >}} -->
+
+<!-- Figures can go here. -->
+
+```{r include=TRUE, echo=FALSE}
+#| label: Study profile.
+#| fig-cap: Study profile.
+#| out-width: 100%
+#| fig-pos: h
+
+library(knitr)
+# knitr::include_graphics("~/OneDrive - UNSW/04_projects/05-examples-and-practice/loud-llama/figures/pow-sampling-sites.PNG")
+
+
+```
+
+
+![Study profile.](../images/profile.png){#fig-1}
+
+{{< pagebreak >}}
+
+\newpage
+
+![Map of Australia with the individual sampling sites depicted by a filled circle with colour corresponding to a local health district](../images/pow-sampling-sites.PNG)
+
+```{r fig-map-aus}
+#| fig-cap: Map of Australia with the individual sampling sites depicted by a filled circle with colour corresponding to a local health district
+
+#| out-width: 100%
+#| fig-pos: h
+# knitr::include_graphics("C:/Users/MJstowe/OneDrive - UNSW/Documents/pow.study/analysis/figures/peerbus-sampling-map.png") 
+```
+
+{{< pagebreak >}}
+
+\newpage
+
+```{r fig-map-lhd}
+#| fig-cap: Map of sampling locations within A) X; B); and C) Local Health District.
+#| apa-twocolumn: true
+#| out-width: 100%
+#| fig-pos: h
+# knitr::include_graphics("C:/Users/MJstowe/OneDrive - UNSW/Documents/pow.study/analysis/figures/peerbus-sampling-map-lhd.png")
+```
+
+<!-- Figure 1: Study profile -->
+
+```{r protocol-fig, fig.cap="Figure 1. Study profile.", out.width="70%", include=TRUE}
+
+
+# knitr::include_graphics(here("manuscript/profile.png"))
+```
 
 
