@@ -9,9 +9,21 @@
 <meta name="author" content="MJ Stowe">
 <meta name="author" content="Louisa Degenhardt">
 <meta name="author" content="Jason Grebely">
-<meta name="dcterms.date" content="2025-03-13">
+<meta name="author" content="Briallen Lloyd">
+<meta name="author" content="Rodd Hinton">
+<meta name="author" content="Kylie Hull">
+<meta name="author" content="Kate Patton">
+<meta name="author" content="Lucy Pepolim">
+<meta name="author" content="Meghan Macdonald">
+<meta name="author" content="Melanie Kingsland">
+<meta name="author" content="Alex Wade">
+<meta name="author" content="Evan Cunningham">
+<meta name="author" content="Mary Ellen Harrod">
+<meta name="author" content="Charles Henderson">
+<meta name="author" content="Jason Grebely">
+<meta name="dcterms.date" content="2025-03-15">
 
-<title>A peer-led, decentralized mobile model to enhance access to hepatitis C point-of-care testing and treatment</title>
+<title>Quarto Article Template</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +36,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -105,15 +170,57 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="toc-actions"><ul><li><a href="https://github.com/mjxstowe/quarto-article-template/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mjxstowe/quarto-article-template/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#study-design-and-participants" id="toc-study-design-and-participants" class="nav-link" data-scroll-target="#study-design-and-participants">Study design and participants</a></li>
+  <li><a href="#model-of-care-development" id="toc-model-of-care-development" class="nav-link" data-scroll-target="#model-of-care-development">Model of care development</a></li>
+  <li><a href="#study-setting" id="toc-study-setting" class="nav-link" data-scroll-target="#study-setting">Study setting</a></li>
+  <li><a href="#procedures" id="toc-procedures" class="nav-link" data-scroll-target="#procedures">Procedures</a></li>
+  <li><a href="#outcomes" id="toc-outcomes" class="nav-link" data-scroll-target="#outcomes">Outcomes</a></li>
+  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis">Statistical analysis</a></li>
+  <li><a href="#study-oversight-1" id="toc-study-oversight-1" class="nav-link" data-scroll-target="#study-oversight-1">Study oversight</a></li>
+  <li><a href="#role-of-the-funding-source-1" id="toc-role-of-the-funding-source-1" class="nav-link" data-scroll-target="#role-of-the-funding-source-1">Role of the funding source</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#participant-characteristics" id="toc-participant-characteristics" class="nav-link" data-scroll-target="#participant-characteristics">Participant characteristics</a></li>
+  <li><a href="#hcv-testing" id="toc-hcv-testing" class="nav-link" data-scroll-target="#hcv-testing">HCV testing</a></li>
+  <li><a href="#awareness-of-hcv-infection-status" id="toc-awareness-of-hcv-infection-status" class="nav-link" data-scroll-target="#awareness-of-hcv-infection-status">Awareness of HCV infection status</a></li>
+  <li><a href="#hcv-treatment-uptake" id="toc-hcv-treatment-uptake" class="nav-link" data-scroll-target="#hcv-treatment-uptake">HCV treatment uptake</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#open-science-statement" id="toc-open-science-statement" class="nav-link" data-scroll-target="#open-science-statement">Open Science Statement</a></li>
+  <li><a href="#author-contributions" id="toc-author-contributions" class="nav-link" data-scroll-target="#author-contributions">Author Contributions</a></li>
+  <li><a href="#competing-interests" id="toc-competing-interests" class="nav-link" data-scroll-target="#competing-interests">Competing interests</a></li>
+  <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding">Funding</a></li>
+  <li><a href="#data-availability-statement" id="toc-data-availability-statement" class="nav-link" data-scroll-target="#data-availability-statement">Data Availability Statement</a></li>
+  <li><a href="#conflict-of-interest" id="toc-conflict-of-interest" class="nav-link" data-scroll-target="#conflict-of-interest">Conflict of interest</a></li>
+  <li><a href="#financial-support" id="toc-financial-support" class="nav-link" data-scroll-target="#financial-support">Financial support</a></li>
+  <li><a href="#ethics-statement" id="toc-ethics-statement" class="nav-link" data-scroll-target="#ethics-statement">Ethics statement</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#tables-and-figures" id="toc-tables-and-figures" class="nav-link" data-scroll-target="#tables-and-figures">Tables and Figures</a>
+  <ul class="collapse">
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">Tables</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/mjxstowe/quarto-article-template/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mjxstowe/quarto-article-template/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">A peer-led, decentralized mobile model to enhance access to hepatitis C point-of-care testing and treatment</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/mjxstowe/quarto-article-template"><i class="bi"></i> Code</button></div></div>
-<p class="subtitle lead">(Original research article)</p>
+<div class="quarto-title-block"><div><h1 class="title">Quarto Article Template</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/mjxstowe/quarto-article-template">View Source</a></li></ul></div></div>
+<p class="subtitle lead">A personal template for Quarto articles</p>
 </div>
 
 
@@ -145,6 +252,102 @@ ul.task-list li input[type="checkbox"] {
             The Kirby Institute, UNSW Sydney, Australia
           </p>
       </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Briallen Lloyd <a href="mailto:xx@nuaa.org.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The NSW Users &amp; AIDS Association (NUAA), sYDNEY
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Rodd Hinton <a href="mailto:xx@nuaa.org.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The NSW Users &amp; AIDS Association (NUAA)
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Kylie Hull <a href="mailto:xx@nuaa.org.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The NSW Users &amp; AIDS Association (NUAA)
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Kate Patton <a href="mailto:xx@nuaa.org.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            NSW ministry of Health
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lucy Pepolim <a href="mailto:scomben@kirby.unsw.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The NSW Users &amp; AIDS Association (NUAA)
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Meghan Macdonald <a href="mailto:scomben@kirby.unsw.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The Kirby Institute, UNSW Sydney, Australia
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Melanie Kingsland <a href="mailto:scomben@kirby.unsw.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The Kirby Institute, UNSW Sydney, Australia’
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Alex Wade <a href="mailto:scomben@kirby.unsw.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The Kirby Institute, UNSW Sydney, Australia
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Evan Cunningham <a href="mailto:xx@nuaa.org.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The Kirby Institute, UNSW Sydney, Australia
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mary Ellen Harrod <a href="mailto:xx@nuaa.org.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The NSW Users &amp; AIDS Association (NUAA), Sydney, Australia
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Charles Henderson <a href="mailto:xx@nuaa.org.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The NSW Users &amp; AIDS Association (NUAA), Sydney, Australia
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jason Grebely <a href="mailto:jgrebely@!kirby.unsw.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/xxxx-xxxx-xxxx" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The Kirby Institute, UNSW Sydney, Australia
+          </p>
+      </div>
   </div>
 
 <div class="quarto-title-meta">
@@ -153,7 +356,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 13, 2025</p>
+      <p class="date">March 15, 2025</p>
     </div>
   </div>
   
@@ -183,8 +386,516 @@ ul.task-list li input[type="checkbox"] {
 <section id="code" class="level4">
 <h4 class="anchored" data-anchor-id="code">Code</h4>
 <p>All the raw code and data for this paper is available in a <a href="https://github.com/mjxstowe/quarto-article-template">GitHub repository</a>.</p>
+<div style="page-break-after: always;"></div>
+<!-- new page -->
+</section>
+<section id="abstract" class="level1">
+<h1>Abstract</h1>
+<p><strong>Background:</strong> Community-based, socially responsive peer-led approaches to hepatitis C (HCV) testing and treatment can improve access, increase uptake, and overcome barriers to care. We examined the feasibility of a decentralized mobile peer-led test and treat intervention integrating peer-operated point-of-care HCV RNA testing and peer-facilitated linkage to care.</p>
+<p><strong>Methods:</strong> Peers On Wheels (POW) is an observational cohort study of a peer-led mobile model to expand point-of-care HCV testing to people with recent injecting drug use recruited between July 2022 and May 2023 at 11 locations in New South Wales, Australia. The study was co-designed and implemented by a peer-based organisation representing people who use drugs. Participants received incentives, point-of-care HCV antibody and RNA testing, a text message or upon return to the service, and peer-assisted linkage to care and treatment. The proportion of people accepting HCV testing and initiating HCV treatment were assessed.</p>
+<p><strong>Results:</strong> Between September 2022 – May 2023, 674 participants were enrolled. Of these, the median age was 45 years, 264 (43%) were female, 367 (60%) identified as Aboriginal, 153 (25%) were receiving opioid agonist treatment and XX (XX%) had injected drugs ever and XX (XX%) had injected drugs in the past month. Among those offered an HCV test, XX% (n=XX) accepted testing and XX% (n=XX) were HCV RNA detectable. Among those with current HCV (n=53), XX (XX%) were linked to care and XX (XX%) initiated treatment. Reasons for not initiating treatment included loss to follow-up (n=XX), XX, and XX.</p>
+<p><strong>Conclusions:</strong> A peer-led mobile model led to a high number of point-of-care HCV testing among people at risk of HCV infection, with XX% initiating treatment. This peer-led mobile model facilitated an expanded reach of testing and diagnosis, but further strategies should be explored to facilitate enhanced linkage to care and treatment. date: July 10, 2024</p>
+<hr>
+</section>
+<section id="introduction" class="level1 unnumbered">
+<h1 class="unnumbered">Introduction</h1>
+<p>The World Health Organization has set a goal to eliminate hepatitis C virus (HCV) infection as a major public health threat by 2030, with targets to increase HCV diagnoses and treatment, and reduce new infections and liver-related deaths (WHO, 2017). However, despite strong early treatment uptake <span class="citation" data-cites="alavi2019">(<a href="#ref-alavi2019" role="doc-biblioref"><strong>alavi2019?</strong></a>)</span> , annual treatment numbers have declined and data now suggests that for Australia to achieve hepatitis C elimination, testing rates must increase by at least 50% among people who inject drugs <span class="citation" data-cites="scott2020">(<a href="#ref-scott2020" role="doc-biblioref"><strong>scott2020?</strong></a>)</span>. Increasing uptake of HCV testing and treatment is hampered by lack of appropriate testing modalities and inaccessible models of service provision, limited support along current diagnostic pathways, and exposure to drug-related stigma and discrimination, amplified in key populations, such as people who inject drugs <span class="citation" data-cites="grebely2017 madden2018 gibbs2021">(<a href="#ref-grebely2017" role="doc-biblioref"><strong>grebely2017?</strong></a>; <a href="#ref-madden2018" role="doc-biblioref"><strong>madden2018?</strong></a>; <a href="#ref-gibbs2021" role="doc-biblioref"><strong>gibbs2021?</strong></a>)</span></p>
+<p>Although the availability of point-of-care testing for the detection of active HCV infection in one hour <span class="citation" data-cites="lamouryEvaluationXpertHCV2018 grebely2017">(<a href="#ref-lamouryEvaluationXpertHCV2018" role="doc-biblioref"><strong>lamouryEvaluationXpertHCV2018?</strong></a>; <a href="#ref-grebely2017" role="doc-biblioref"><strong>grebely2017?</strong></a>)</span> has improved HCV clinical management, globally <span class="citation" data-cites="lamouryEvaluationXpertHCV2018 grebely2017 draper2020 macisaac2024 shih2023 sheehan2023 grebely2024 mccartneyPointofCareTestingHepatitis2024 trickeyImpactHepatitisVirus2023">(<a href="#ref-lamouryEvaluationXpertHCV2018" role="doc-biblioref"><strong>lamouryEvaluationXpertHCV2018?</strong></a>; <a href="#ref-grebely2017" role="doc-biblioref"><strong>grebely2017?</strong></a>; <a href="#ref-draper2020" role="doc-biblioref"><strong>draper2020?</strong></a>; <a href="#ref-macisaac2024" role="doc-biblioref"><strong>macisaac2024?</strong></a>; <a href="#ref-shih2023" role="doc-biblioref"><strong>shih2023?</strong></a>; <a href="#ref-sheehan2023" role="doc-biblioref"><strong>sheehan2023?</strong></a>; <a href="#ref-grebely2024" role="doc-biblioref"><strong>grebely2024?</strong></a>; <a href="#ref-mccartneyPointofCareTestingHepatitis2024" role="doc-biblioref"><strong>mccartneyPointofCareTestingHepatitis2024?</strong></a>; <a href="#ref-trickeyImpactHepatitisVirus2023" role="doc-biblioref"><strong>trickeyImpactHepatitisVirus2023?</strong></a>)</span> significant barriers to HCV testing and treating exist <span class="citation" data-cites="grebely2024">(<a href="#ref-grebely2024" role="doc-biblioref"><strong>grebely2024?</strong></a>)</span>. Despite studies demonstrating that point-of-care HCV RNA testing and treatment is associated with increased test acceptability <span class="citation" data-cites="bajis2017">(<a href="#ref-bajis2017" role="doc-biblioref"><strong>bajis2017?</strong></a>)</span>, reductions in loss to follow-up and enhanced treatment uptake <span class="citation" data-cites="alavi2019 iversen2019 mccartneyPointofCareTestingHepatitis2024 trickeyImpactHepatitisVirus2023">(<a href="#ref-alavi2019" role="doc-biblioref"><strong>alavi2019?</strong></a>; <a href="#ref-iversen2019" role="doc-biblioref"><strong>iversen2019?</strong></a>; <a href="#ref-mccartneyPointofCareTestingHepatitis2024" role="doc-biblioref"><strong>mccartneyPointofCareTestingHepatitis2024?</strong></a>; <a href="#ref-trickeyImpactHepatitisVirus2023" role="doc-biblioref"><strong>trickeyImpactHepatitisVirus2023?</strong></a>)</span>, testing and treatment in community-based settings still remains inaccessible to marginalized and underserved populations of people who use drugs <span class="citation" data-cites="demant2023">(<a href="#ref-demant2023" role="doc-biblioref"><strong>demant2023?</strong></a>)</span>. Although studies have evaluated mobile HCV clinics <span class="citation" data-cites="demant2023 midgard2022 ryan2021 rennert2024">(<a href="#ref-demant2023" role="doc-biblioref"><strong>demant2023?</strong></a>; <a href="#ref-midgard2022" role="doc-biblioref"><strong>midgard2022?</strong></a>; <a href="#ref-ryan2021" role="doc-biblioref"><strong>ryan2021?</strong></a>; <a href="#ref-rennert2024" role="doc-biblioref"><strong>rennert2024?</strong></a>)</span>, few studies have evaluated models in which HCV RNA and antibody testing is performed by peers and accompanied by peer-facilitated linkage to care.</p>
+<p>In addition to peer-led strategies to enhance testing, interventions are required to enhance engagement and maintenance in care for people with ongoing injecting drug use <span class="citation" data-cites="cunningham2022">(<a href="#ref-cunningham2022" role="doc-biblioref"><strong>cunningham2022?</strong></a>)</span>. Peer-assisted linkage to care (also called peer-support) across all stages of the treatment pathway has been demonstrated to be an important intervention to facilitate HCV testing, linkage to care/treatment, and maintained engagement in care <span class="citation" data-cites="crawford2013 grebely2023 henderson2017 ward2019">(<a href="#ref-treloar2015" role="doc-biblioref"><strong>treloar2015?</strong></a>)</span>). Peer-assistance at all stages of the cascade of care creates an opportunity for relatedness, knowledge sharing, trust and rapport, and allows for the introduction of wider psychosocial support mechanisms and avenues for health-promotion <span class="citation" data-cites="crawford2013 surey2019 surey2021 satinsky2021">(<a href="#ref-crawford2013" role="doc-biblioref"><strong>crawford2013?</strong></a>; <a href="#ref-surey2019" role="doc-biblioref"><strong>surey2019?</strong></a>; <a href="#ref-surey2021" role="doc-biblioref"><strong>surey2021?</strong></a>; <a href="#ref-satinsky2021" role="doc-biblioref"><strong>satinsky2021?</strong></a>)</span>.</p>
+<p>This study presents the results of an interventional cohort study evaluating a decentralized mobile peer-led test and treat intervention integrating peer-operated point-of-care HCV RNA testing, peer-assisted linkage to care.</p>
+</section>
+<section id="methods" class="level1 unnumbered">
+<h1 class="unnumbered">Methods</h1>
+<section id="study-design-and-participants" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="study-design-and-participants">Study design and participants</h2>
+<p>In this observational cohort study, we enrolled participants through a peer-led mobile model consisting of peer-supported engagement, financial incentives, point-of-care HCV testing, and linkage to care and treatment among people at risk of HCV infection or attending a service providing care for people at risk of HCV infection. Participants were enrolled via community-based outreach activities at XX sites in New South Wales, Australia from September 2022 to May 2023 including X (n=X), X (n=X), and X (n=X). Study sites included X sites in Hunter New England Local Health District, X in South-east Sydney Local Health District and X sites in Mid-North Coast Local Health District (Figure 2a-c)</p>
+<p>Participants were 18 years or older and had a risk factor for the acquisition of HCV infection (including current or past injecting drug use, previous incarceration, engagement with community-services, indigenous and diagnoses with a substance use disorder or other psychiatric condition) or were attending a service caring for people with risk factors for the acquisition of HCV infection. This project was conducted as a sub-study of the National Australian HCV Point-of-Care Testing Program, an observational cohort study evaluating point-of-care HCV testing scale-up in Australia <span class="citation" data-cites="grebely2024">(<a href="#ref-grebely2024" role="doc-biblioref"><strong>grebely2024?</strong></a>)</span>.</p>
+</section>
+<section id="model-of-care-development" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="model-of-care-development">Model of care development</h2>
+<p>The Peers on Wheels project was led, developed, and implemented by a peer-based organisation representing people who use and inject drugs, the New South Wales Users and AIDS Association (NUAA) through a co-design process including researchers (The Kirby institute, UNSW), health policy makers (New South Wales Health), service providers, and people who use drugs. Project governance included a steering committee consisting of representatives from each organisation that met fortnightly to design the study protocol, approve plans for data analysis and provide implementation oversight.</p>
+<p>The campaign schedule and local logistics were organized by NUAA. Site locations for testing campaigns were identified and selected by peers with local expertise and knowledge (part of the NUAA peer network) in consultation with local health districts. Criteria for site location selection included the identification of localised areas where people who inject drugs could be reached or were known to visit and where accessible HCV testing and treatment was suboptimal. Knowledge generated through consultation with local peers and networks of people who use drugs was leveraged to identify fieldwork locations prior to each campaign. Site locations were also informed by the need to set up a welcoming area for people to understand what was happening, and to accommodate testing equipment and treatment processes. In addition to peer workers from Sydney, a local peer that was part of the NUAA peer network who was familiar with the local area was employed for the duration of the fieldwork within a particular location to ensure local expertise and knowledge.</p>
+<p>Substantive work for each campaign was carried out to prior to visiting each site location. This included regular communication with key personnel within the local health district (e.g.&nbsp;service managers, health promotion workers) and those involved in the management of HCV care (e.g.&nbsp;nurses, physicians, specialists) to develop pathways to e, 1-2 peer point-of-care testing operators (who were trained in point-of-care HCV antibody testing and RNA testing using a GeneXpert instrument), a local peer, and at least one person from the local health district. For the purposes of this project, “peers’ were defined by a range of characteristics including, people with lived and living experience OF injecting drug use and viral hepatitis, connection with a drug-user social identity, and relatedness to communities of people who use drugs <span class="citation" data-cites="greer2016 greer2018">(<a href="#ref-greer2016" role="doc-biblioref"><strong>greer2016?</strong></a>; <a href="#ref-greer2018" role="doc-biblioref"><strong>greer2018?</strong></a>)</span>. Prior to implementation of the project, project staff (i.e.&nbsp;peers) were trained to undertake point-of-care HCV antibody and RNA testing through theoretical and practical training (online and remotely) provided by the International Centre for Point-of-Care Testing at Flinders University. In total, four peers were trained as operators of the GeneXpert instrument and as qualified to administer a point-of-care HCV test.</p>
+</section>
+<section id="study-setting" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="study-setting">Study setting</h2>
+<p>Between Septemeber 2022 and 23 August 2023, X sites were visited across three local health districts in New South Wales, Australia, including Hunter New England (urban/regional), Mid-North Coast (regional) and South Eastern Sydney (urban) (see <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>). Fieldwork campaigns ranged from three to five days at a given location with multiple campaigns being held within each local health district. Fieldwork occurred in a range of spaces and services, including pharmacies where people accessed drug treatment, district hospitals, car parks in front of community services, community service hubs, parks in the community, allied services and private locations proposed by participants (e.g., private houses). Services were provided via drop-in visits and no appointments were required.</p>
+</section>
+<section id="procedures" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="procedures">Procedures</h2>
+<p>The project was advertised generally two weeks preceding the events with posters in local clinics and other services (including the details of when and where the campaign was occurring), referral through health services (e.g.&nbsp;wallet cards), website and NUAA communication channels and via word of mouth. Recruitment within each campaign spanned one to five days at each site location concurrent with defined pathways for linkage to HCV care and treatment. The mobile and flexible nature of the model often allowed for multiple sites to be visited in a single day.</p>
+<p>Enrolment assessments included peer-administered behavioural questionnaires on tablet computers (demographics, behavioural risk, and previous HCV testing and treatment) and peer-administered point-of-care HCV antibody testing (Abbott Bioline HCV, City, Country) and/or point-of-care HCV RNA testing [Xpert HCV Viral Load Fingerstick Assay (Cepheid, Sunnyvale, United States; lower limit of quantification 100 IU/ml, upper limit of quantification 108 log10 IU/ml; 100% sensitivity, 100% specificity)]. A peer collected a capillary whole-blood sample from participants via a fingerstick (Safety Lancet, Super Blade [Order Number 85.1018], Sarstedt, Nümbrecht, Germany) using procedures recommended by the WHO (WHO, 2010) and collected into a 100-uL minivette collection tube (Minivette POCT 100μl K3E [Order number 17.2113.101], Sarstedt, Nümbrecht, Germany). Immediately following collection, 100 uL of capillary whole blood was placed directly into the Xpert HCV VL Fingerstick assay cartridge (lower limit of quantification of 100 IU/mL; Cepheid, Sunnyvale) for on-site HCV RNA testing. The cartridge was loaded into the GeneXpert instrument which uses real-time PCR (rt-PCR) technology that enables the quantification of HCV RNA levels (Cepheid, 2019). The time to result for Xpert HCV VL Fingerstick testing is 58 minutes. All Xpert HCV Viral Load assay testing were performed on a clinic-based GeneXpert R2 6-colour, 4 module machine (GXII-2-L System, GeneXpert Dx software v4.6a; Cepheid, Sunnyvale) operated as per the manufacturer’s instructions (Cepheid, 2019).</p>
+<p>Initially, point-of-care HCV RNA testing was immediately performed for all participants. However, after a review of data demonstrating a lower-than-expected prevalence of current HCV infection during the first two campaigns in Hunter New England Local Health District (XX site locations), the protocol was revised in Month XXXX so that all participants without a history of HCV treatment received point-of-care HCV antibody with reflex point-of-care HCV RNA testing and participants who had previously received treatment received immediate point-of-care HCV RNA testing.</p>
+<p>While waiting for the HCV RNA test result, participants could access food and refreshments, sterile injecting equipment, overdose education and naloxone, sexual health resources, and harm reduction supplies. During this time, a peer would engage with the participant about available services offered by NUAA such as their online NSP shop with state-wide postal delivery. Nominated staff from the respective LHDs were provided to support and assist with testing on the day. All participants were compensated at completion of an HCV antibody or HCV RNA test (AUD$20 cash), initiation (AUD$20 cash) and completion (AUD$20 cash) of treatment.</p>
+<p>Participants with detectable HCV RNA were offered a clinical assessment with a nurse or appropriate healthcare professional to assess suitability for DAA therapy and linked to a peer support worker when such support was available. Participants deemed not suitable for treatment under this simplified model of care were referred for follow-up through standard of care. NUAA’s Treatment Assisted Pathway Consent process (Model of Care) is an important component of this treatment pathway approach whereby NUAA obtained consent to maintain contact and assist the participant in treatment navigation, treatment initiation, and treatment completion.</p>
+<p>Arrangements were put in place with a local pharmacy to facilitate streamlined dispensing of DAA therapy. Following clinical assessment and a decision to initiate DAA therapy, the project PI would contact a physician via telephone to arrange a script and an email would be sent to the pharmacy to allow medication dispensing (with a hard copy of the script delivered the next day). The medication was either directly dispensed to the client at the pharmacy or the nurse or peer would pick up the medication from the pharmacy for collection at the NSP by the client.</p>
+<p>A dedicated peer worker provided education and engagement. This peer played a pivotal role in the study and was responsible for several components including facilitating health promotion activities, leading engagement in testing as people were accessing services (e.g., people accessing pharmacies for dosing as part of opioid agonist treatment), providing a bridge between participants and clinical support-staff at the service, providing expertise and support for the completion of research survey, and providing ongoing support for participants who initiated treatment through weekly communication and follow-up. Follow-up was done via telephone calls or in-person.</p>
+</section>
+<section id="outcomes" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="outcomes">Outcomes</h2>
+<p>The primary outcome was the number of people who received point-of-care HCV testing. Secondary outcomes included the proportion of people with current HCV infection (HCV RNA detected with the Xpert HCV Viral Load Fingerstick assay) and among those with current HCV infection, the proportion linked to HCV care and initiating HCV treatment within 12 weeks of enrolment.</p>
+</section>
+<section id="statistical-analysis" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="statistical-analysis">Statistical analysis</h2>
+<p>Categorical data were summarized and reported as N (%), continuous data as median (interquartile range [IQR]). Analyses of the primary outcome and the cascade of care were performed among all HCV RNA positive participants. Proportions with detectable HCV RNA (viremic prevalence) were reported among all participants with a valid point-of-care test result. Analysis was conducted in R version 4.2.2 using the gtsummary v. 1.7.2</p>
+<p>The analytical approach received input from and was reviewed by people who use drugs with lived and living experience of injecting drug use and viral hepatitis. Advice and perspectives were provided on the inclusion of explanatory variables and the clinical and practical significance of the findings.</p>
+</section>
+<section id="study-oversight-1" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="study-oversight-1">Study oversight</h2>
+<p>All participants provided written informed consent before study procedures. The study protocol and amendments were approved by the Human Research Ethics Committees at St Vincent’s Hospital, Sydney (HREC Ref: HREC/17/SVH/113) and the Aboriginal Health and Medical Research Council (HREC Ref: 1279/17). This study was conducted according to the Declaration of Helsinki and International Conference on Harmonization Good Clinical Practice (ICH/GCP) guidelines.</p>
+</section>
+<section id="role-of-the-funding-source-1" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="role-of-the-funding-source-1">Role of the funding source</h2>
+<p>The study was funded by a grant from NSW Health and a research grant from the National Health and Medical Research Council (2013921) and the Medical Research Futures Fund (MRRART000099). This study was also supported by research grants from Gilead Sciences Pty Ltd and Cepheid (provided GeneXpert platforms and testing). The funders had no role in the study design, data collection, analysis, interpretation of the results, the writing of the report or the decision to submit the report for publication. JG, CH and MJS had access to the raw data. The sponsor (The Kirby Institute, UNSW Sydney) co-designed the study with the NSW Users and AIDS Association (NUAA). NUAA collected the data, managed study samples, monitored study conduct, and performed the required quality assurance measures on the GeneXpert system. JG, CH, and MJS were responsible for the decision to submit for publication.</p>
+</section>
+</section>
+<section id="results" class="level1 unnumbered">
+<h1 class="unnumbered">Results</h1>
+<section id="participant-characteristics" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="participant-characteristics">Participant characteristics</h2>
+<p>Overall, 674 participants were enrolled and tested. (<a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>). The median age was 45 years, 43% (264 of 674) were female, 60% (367 of 674) identified as Aboriginal and/or Torres Straight Islander, and 25% (153 of 674) were receiving OAT (<a href="#tbl-summary-characteristics" class="quarto-xref">Table&nbsp;1</a>). Overall, 29% (n=197) of people had injected in last six months, 19% (n=127) of people had injected ever, but not in the last six months and 52% (n=350) had never injected drugs (<a href="#tbl-summary-characteristics" class="quarto-xref">Table&nbsp;1</a>).</p>
+<p>Among those who had injected drugs in the previous six month (n=197), 51% (79 of 154) had injected drugs &gt;=daily in the previous month. Commonly injected drugs in the previous month included methamphetamine (60%), heroin (32%), other opioids (6%), cocaine (1%) and benzodiazepines (1%).</p>
+</section>
+<section id="hcv-testing" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="hcv-testing">HCV testing</h2>
+<p>Overall, 674 participants were enrolled and received a point-of-care HCV test (<a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>). HCV testing and treatment characteristics stratified by injecting is presented in (<a href="#tbl-summary-characteristics" class="quarto-xref">Table&nbsp;1</a>). Among the 674 participants receiving point-of-care HCV testing, 84% (n=563) of participants received an HCV antibody test, 21% (113 of 563) testing HCV antibody positive, and XX% (XX of 103) received a reflex point-of-care HCV RNA test. The remaining 20% (n=119) received immediate point-of-care HCV RNA testing (self-reported previous HCV infection or previous HCV treatment). Overall, among 218 HCV RNA tests performed, 3% (n=19) and 0.8% (n=5) of tests returned an error or invalid, respectively.</p>
+<!-- There are two paragraphs on HCV antibodies; 1) results from the HCV antibody tests carried out in this study; and 2) the estimated HCV antibody prevalence that estimated HCV antibodies among all treatment eligible participants -->
+<p>Overall, HCV antibodies were detected in 21% (113 of 563) of participants and was higher among people who had injected in the last 6 months, (39%, 77 of 197, P=X.XXX), and people who had injected ever, but not in the last six months (22%, 28 of 127, P=X.XXX) compared to people who had never injected drugs (2%, 8 of 350, P=X.XXX).</p>
+<p>The estimated HCV antibody prevalence determined as participants who self-reported previous and current HCV infection, being told they had HCV infection, cleared the virus spontaneously and HCV RNA detected in the point-of-care test was 33% (221 of 674). The estimated HCV antibody prevalence<br>
+higher among people who had injected in last six month (73%, 144 of 197, P&lt;0.001), and people who had injected ever, but not in the last six months (53%, 67 of 127, P=X.XXX) compared to people who had never injected drugs (3%, 10 of 350, P=X.XXX).</p>
+<p>Overall, the HCV RNA prevalence was 8% (53 of 674). The HCV RNA prevalence was higher among people who had injected in last six month (19%, 37 of 197, P&lt;0.001), and people who had injected ever, but not in the last six months (10%, 13 of 127, P=X.XXX) compared to people who had never injected drugs (1%, 3 of 350, P=X.XXX).</p>
+<p>Among all people with current infection (i.e.&nbsp;detectable HCV RNA ; n=53), 19% (n=7) had previously received HCV treatment (<a href="#tbl-summary-stratified-by-injecting" class="quarto-xref">Table&nbsp;2</a>).</p>
+</section>
+<section id="awareness-of-hcv-infection-status" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="awareness-of-hcv-infection-status">Awareness of HCV infection status</h2>
+<p>Among all participants, XX% (n=XXX/XXX) were aware of their HCV infection status (Table X). After excluding participants who were never tested (n=165) and who did not report a status (n=XXX), the agreement between self-reported and laboratory results was XX% (XXX/XXX) (Table X). Awareness was higher among those not currently infected (HCV RNA undetectable) (XX%, n=XXX/XXX) compared to those with current HCV infection (XX%, n=XXX/XXX) (Table X).</p>
+</section>
+<section id="hcv-treatment-uptake" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="hcv-treatment-uptake">HCV treatment uptake</h2>
+<p>Among 53 people with detectable HCV, 25% (10 of 53) initiated DAA treatment through the study. Among these 10 participants, the median age was 51 years, 40% (4 of 10) were female, and 10% (1 of 10) had injected drugs in the previous month.</p>
+</section>
+</section>
+<section id="discussion" class="level1 unnumbered">
+<h1 class="unnumbered">Discussion</h1>
+<p>This study examined the feasibility of a peer-led mobile model to expand access to point-of-care HCV testing and treatment among people at risk of HCV infection in the community in New South Wales, Australia. Overall, 674 participants were enrolled and tested. The estimated HCV antibody prevalence was XX% and HCV RNA prevalence was XX%. Awareness of infection status was suboptimal, particularly among those with current infection. The proportion of people linked to treatment was XX%. This study demonstrates a high engagement in testing and supports the feasibility of community-led testing by peer-workers. These data highlighting the feasibility of implementing a peer-led, mobile decentralized test and treat intervention with peer-operated point-of-care HCV RNA testing will guide clinical practice to implement similar models internationally. This study supports health policy by providing evidence to support the inclusion of peer-operated point-of-care HCV RNA testing in local, national, and international viral hepatitis strategy guidelines. However, further work is needed to understand barriers and enablers of HCV testing and treatment to design interventions to support linkage to HCV treatment.</p>
+<p>The estimated HCV antibody and RNA prevalence in this study was XX% and XX% respectively. These estimates are similar to other studies in community settings across Australia (ref). consistent with othother estimates from similar community-based settings acriss Australia derived in similar populations in. Among people weho inject drugs, either within the last six months or ever, the HCV antibody prevalence was XX% and the HCV RNA XX%.</p>
+<p>The treatment uptake observed in this study (19%) is lower than in studies evaluat pingint-of-care HCV RNA testing in mobile clinics (74%) (O’Loan, et al., 2021), supervised consumption facilities (89% - XX) (<span class="citation" data-cites="macisaac2024">(<a href="#ref-macisaac2024" role="doc-biblioref"><strong>macisaac2024?</strong></a>)</span>), NSP (63-84%) (Howell, et al., 2022; Shilton, et al., 2022), community-based settings (79-91%) (Draper, et al., 2021; Ralton, et al., 2021), and prisons (93%) (<span class="citation" data-cites="sheehan2023">(<a href="#ref-sheehan2023" role="doc-biblioref"><strong>sheehan2023?</strong></a>)</span>) (Sheehan, et al., 2021). This study had peers leading all aspects of the study, including stakeholder engagement, study enrollment, point-of-care HCV antibody testing and HCV RNA testing using the GeneExpert system. While having peers positioned to perform these roles had numerous benefits, doing so also came with it’s own set of challenges. Traditionally, peers have been excluded from clinical roles and spaces, so having peers present in a clinical role for this study could’ve posed challenges along the treatment pathway. Further, working across three different local health districts with different processes added additional steps to the treatment pathway.</p>
+<p>This study has limitations. Given that participants were recruited from sites within New South Wales, Australia, the results of this study may not be applicable to all HCV treatment settings and populations of people who inject drugs. Unfortunately, information on the number of people approached for this study was not collected, so it was not possible to assess the reach of the study in terms of the proportion of people who were approached and accepted HCV testing. Further, participants received AUD$20 cash reimbursement for receiving an HCV test, AUD$20 for initiating treatment (if HCV RNA detected) and AUD$20 for completion of treatment, which may have provided additional incentive to return for follow-up and led to an increased treatment uptake in the study. Despite the renumeration, treatment uptake in this study was suboptimal, with rates below other studies providing mobile, peer-supported point-of-care HCV RNA testing (<span class="citation" data-cites="demant2023">(<a href="#ref-demant2023" role="doc-biblioref"><strong>demant2023?</strong></a>)</span>; <span class="citation" data-cites="midgard2022">(<a href="#ref-midgard2022" role="doc-biblioref"><strong>midgard2022?</strong></a>)</span>; etc) (Demant et al., 2023; Midgaard et al., 2022; O’Loan, et al., 2021; Ralton, et al., 2021). Rates of treatment uptake were impacted by the complex landscape of service providers across New South Wales, many also part of Australia’s National Point of Care Program, and the need to ensure appropriate treatment pathways across different models of service provision. There were also logistical and financial constraints, that limited the number of participants recruited into the study and resulted in a smaller than anticipated sample size and limited the power to investigate factors associated with detectable HCV RNA (which is why these results are presented only descriptively).</p>
+<p>The findings from this study have important clinical, research, and policy implications. In order to achieve hepatitis C elimination, innovative approaches to improve testing and treatment among people who inject drugs are required. We demonstrate the success of a real-world model of care incorporating fingerstick HCV RNA PoCT and access to DAA therapy in engaging high-risk individuals in hepatitis C care. Such models of care allow higher numbers of people living with hepatitis C to be diagnosed, cured, and avoid the long-term sequelae of hepatitis C associated liver disease. The demonstration that a decentralized, peer-led mobile testing and treatment model is feasible has the potential to guide clinical practice for point-of-care HCV RNA testing for management of HCV infection. Furthermore, our findings support incorporating recommendations for increased availability and adoption of PoCT technology into national and international clinical guidelines, hepatitis C elimination strategies and health policies. Recently, the Australia government, along with industry sponsors and key stakeholders have funded the implementation of the National Hepatitis C Point-of-care Testing Program, which aims to provide scaled-up point-of-care antibody and RNA testing across a range of community-based sites throughout Australia (<span class="citation" data-cites="grebely2023">(<a href="#ref-grebely2023" role="doc-biblioref"><strong>grebely2023?</strong></a>)</span>) (Grebely et al., 2023b). In addition, findings offer guidance around how peer-support and peer-led point-of-care testing is integrated into health service delivery. Although several mobile HCV clinics are operational within the National Australian HCV Point-of-Care Testing Program (<span class="citation" data-cites="grebely2023">(<a href="#ref-grebely2023" role="doc-biblioref"><strong>grebely2023?</strong></a>)</span>) (Grebely et al.&nbsp;2023), a randomised controlled trial comparing peer-led HCV point-of-care testing, peer-support throughout the treatment pathway, and standard of care among PWID accessing community-based health and support services with embedded health economic evaluation will provide critical information on the effectiveness, acceptability, and cost-effectiveness of the most effective testing strategy in community-based settings. Such programs will be crucial to ongoing identification of key facilitators and barriers to testing and treatment uptake, as well as inform the feasibility of future models of care incorporating point of care testing across a range of global settings. Further, drawing on implementation science and undertaking process mapping will provide insight into key intersections across the diagnostic pathway that contribute to suboptimal outcomes, promoting a reflective and responsive approach that will help to overcome identified barriers. Furthermore, our findings support incorporating recommendations for increased availability and adoption of PoCT technology into national and international clinical guidelines, hepatitis C elimination strategies and health policies. Recently, the Australia government, along with industry sponsors and key stakeholders have funded the implementation of the National Hepatitis C Point-of-care Testing Program, which aims to provide scaled-up point-of-care antibody and RNA testing across a range of community-based sites throughout Australia (<span class="citation" data-cites="grebely2023">(<a href="#ref-grebely2023" role="doc-biblioref"><strong>grebely2023?</strong></a>)</span>).</p>
+</section>
+<section id="conclusion" class="level1 unnumbered">
+<h1 class="unnumbered">Conclusion</h1>
+<p>In conclusion, the Peers on Wheels study provides proof-of-concept data of the feasibility of a mobile, decentralized peer-led test and treat intervention integrating peer-run point-of-care HCV RNA testing, peer-facilitated linkage to care, and peer-supported engagement and delivery among people with recent injecting drug use initiating HCV therapy at community-based health services. Although the proportion of people who initiated treatment was lower than previous studies, the proportion who engaged with the service and were tested was high. An additional limitation of this study was the small sample size, thereby limiting the conclusions that can be drawn from these data. Further research is needed to evaluate the potential of peer-led point-of-care HCV RNA testing and other testing modalities (e.g.&nbsp;dried blood spot testing and point-of-care antibody testing) as potential strategies to simplify and enhance HCV testing, linkage to care, and treatment. This includes understanding the barriers to and acceptability of uptake and integration of point-of-care HCV RNA testing in different services for people who inject drugs. Understanding the effectiveness, acceptability, implementation challenges, and cost-effectiveness of different point-of-care testing strategies and other interventions to improve treatment completion and retention will be critical to inform implementation, funding, and integration into policy and practice to achieve HCV elimination as a major global public health threat.</p>
+</section>
+<section id="acknowledgements" class="level1 unnumbered">
+<h1 class="unnumbered">Acknowledgements</h1>
+<p>Mim (Kombi Clinic) provided insight and support on aspects of service provision. The Flinders University point of care testing program team provided technical support and training.</p>
+</section>
+<section id="open-science-statement" class="level1 unnumbered">
+<h1 class="unnumbered">Open Science Statement</h1>
+<p>All scripts and data used in the analysis are available on <a href="https://osf.io/uc5qy/">OSF</a> and <a href="https://github.com/mx-jx/peers-on-wheels">Github</a>, following the format provided by the rrtools package <span class="citation" data-cites="rrtools">(<a href="#ref-rrtools" role="doc-biblioref"><strong>rrtools?</strong></a>)</span>.</p>
+</section>
+<section id="author-contributions" class="level1 unnumbered">
+<h1 class="unnumbered">Author Contributions</h1>
+<p>To be written.</p>
+</section>
+<section id="competing-interests" class="level1 unnumbered">
+<h1 class="unnumbered">Competing interests</h1>
+<p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest. Gregory J. Dore provided expert advice.</p>
+</section>
+<section id="funding" class="level1 unnumbered">
+<h1 class="unnumbered">Funding</h1>
+<p>The study was funded by a research grant from X. This study was also supported by research grants from Gilead Sciences Pty Ltd and Cepheid (provided GeneXpert platforms and testing). The funders had no role in the study design, data collection, analysis, interpretation of the results, the writing of the report or the decision to submit the report for publication. JG, CH and MJS had access to the raw data. The sponsor (The Kirby Institute, UNSW Sydney) co-designed the study with the NSW Users and AIDS Association (NUAA). NUAA collected the data, managed study samples, monitored study conduct, and performed the required quality assurance measures on the GeneXpert system. JG, CH, and MJS were responsible for the decision to submit for publication. This study was also supported by research grants from Gilead Sciences Pty Ltd and Cepheid (provided GeneXpert platforms and testing).</p>
+</section>
+<section id="data-availability-statement" class="level1 unnumbered">
+<h1 class="unnumbered">Data Availability Statement</h1>
+<p>This publication involved information collected from consenting individuals. Data used for this research cannot be deposited on servers other than those approved by Ethics Committees. This publication has used highly sensitive health information through the collection of survey data. All identifying information, including full name, has been anonymized under strict privacy regulations. Except in the form of conclusions drawn from the data, researchers do not have permission to disclose any data to any person other than those authorized for the research project.</p>
+</section>
+<section id="conflict-of-interest" class="level1 unnumbered">
+<h1 class="unnumbered">Conflict of interest</h1>
+<p>JG reports grants from Camurus, grants from Cepheid, grants from Hologic, grants from Indivior, grants from Merck, during the conduct of the study; grants and personal fees from Abbvie, grants and personal fees from Gilead Sciences, grants and personal fees from Merck, grants and personal fees from Cepheid, outside the submitted work. GD reports grants from Gilead, Abbvie, and Merck. LD has received investigator-initiated untied educational grants for studies of opioid medications in Australia from Indivior, Mundipharma and Seqirus. All remaining authors have no potential conflicts to declare.</p>
+</section>
+<section id="financial-support" class="level1 unnumbered">
+<h1 class="unnumbered">Financial support</h1>
+<p>The opinions expressed in the paper are those of the authors and do not necessarily represent those of Cepheid. This study was also supported in part by a research grant from the Australian Department of Health. The Kirby Institute is also funded by the Australian Department of Health. The views expressed in this publication do not necessarily represent the position of the Australian Government. JG is supported by an NHMRC Investigator Grant (1176131). GJD is supported by an NHMRC Practitioner Fellowship. LD is supported by a National Institute of Health National Institute on Drug Abuse grant (R01DA1104470).</p>
+</section>
+<section id="ethics-statement" class="level1 unnumbered">
+<h1 class="unnumbered">Ethics statement</h1>
+<p>This work was approved by the following ethics committees: Human Research Ethics Committee at St Vincent’s Hospital Sydney (HREC Ref: HREC/17/SVH/113); Aboriginal Health and Medical Research Council (AHMRC Ref: 1279/17).</p>
+</section>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" role="list">
+
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="tables-and-figures" class="level1 unnumbered page-columns page-full">
+<h1 class="unnumbered">Tables and Figures</h1>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Load the packages required for the analysis. If packages haven't been installed yet, use install.packages() followed by the library() function.</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># Another way to load packages is through the pacman package using the p_load() function.</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  broom, <span class="co"># tidy code</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  readxl, <span class="co"># read in excel files</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>  pacman, <span class="co"># loading and reading in packages</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  rio, <span class="co"># importing data</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>  janitor, <span class="co"># data cleaning and tables</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>  lubridate, <span class="co"># working with dates</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>  matchmaker, <span class="co"># dictionary-based cleaning</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>  tidyverse, <span class="co"># data management and visualization</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>  gtsummary, <span class="co"># logistic regression and plotting results</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>  gt, <span class="co"># for gtsummary</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>  flextable, <span class="co"># table creation and manipulating</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>  kableExtra,</span>
+<span id="cb1-18"><a href="#cb1-18"></a>  haven,</span>
+<span id="cb1-19"><a href="#cb1-19"></a>  here,</span>
+<span id="cb1-20"><a href="#cb1-20"></a>  webshot,</span>
+<span id="cb1-21"><a href="#cb1-21"></a>  webshot2,</span>
+<span id="cb1-22"><a href="#cb1-22"></a>  grateful,</span>
+<span id="cb1-23"><a href="#cb1-23"></a>  spelling,</span>
+<span id="cb1-24"><a href="#cb1-24"></a>  finalfit,</span>
+<span id="cb1-25"><a href="#cb1-25"></a>  dplyr,</span>
+<span id="cb1-26"><a href="#cb1-26"></a>  usethis,</span>
+<span id="cb1-27"><a href="#cb1-27"></a>  quarto,</span>
+<span id="cb1-28"><a href="#cb1-28"></a>  rmarkdown,</span>
+<span id="cb1-29"><a href="#cb1-29"></a>  cli, </span>
+<span id="cb1-30"><a href="#cb1-30"></a>  scales, </span>
+<span id="cb1-31"><a href="#cb1-31"></a>  tidybayes, </span>
+<span id="cb1-32"><a href="#cb1-32"></a>  patchwork,</span>
+<span id="cb1-33"><a href="#cb1-33"></a>  colorspace, </span>
+<span id="cb1-34"><a href="#cb1-34"></a>  targets</span>
+<span id="cb1-35"><a href="#cb1-35"></a>)</span>
+<span id="cb1-36"><a href="#cb1-36"></a></span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a></span>
+<span id="cb1-39"><a href="#cb1-39"></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="co"># install.packages('huxtable')</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a><span class="co"># install.packages('openxlsx')</span></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="fu">library</span>(huxtable)</span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="fu">library</span>(openxlsx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Tables and Figures {#sec-tab-fig}</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co">#|label: theme</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># Create a theme for figures, tables and all processed text</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a>apa_theme <span class="ot">&lt;-</span> <span class="cf">function</span>(ft) {</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  ft <span class="sc">%&gt;%</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>    flextable<span class="sc">::</span><span class="fu">font</span>(<span class="at">fontname =</span> <span class="st">"Arial"</span>, <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>    flextable<span class="sc">::</span><span class="fu">fontsize</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>    flextable<span class="sc">::</span><span class="fu">align</span>(<span class="at">align =</span> <span class="st">"left"</span>, <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>    flextable<span class="sc">::</span><span class="fu">align</span>(<span class="at">align =</span> <span class="st">"left"</span>, <span class="at">part =</span> <span class="st">"header"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>    <span class="co"># flextable::rotate(rotation = "lrtb", align = "top", part = "body") %&gt;%</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>    flextable<span class="sc">::</span><span class="fu">border_remove</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a>    flextable<span class="sc">::</span><span class="fu">hline_top</span>(<span class="at">border =</span> officer<span class="sc">::</span><span class="fu">fp_border</span>(<span class="at">width =</span> <span class="fl">1.5</span>), <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>    flextable<span class="sc">::</span><span class="fu">hline_bottom</span>(<span class="at">border =</span> officer<span class="sc">::</span><span class="fu">fp_border</span>(<span class="at">width =</span> <span class="fl">1.5</span>), <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a>    flextable<span class="sc">::</span><span class="fu">hline_bottom</span>(<span class="at">border =</span> officer<span class="sc">::</span><span class="fu">fp_border</span>(<span class="at">width =</span> <span class="fl">1.5</span>), <span class="at">part =</span> <span class="st">"header"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a>    flextable<span class="sc">::</span><span class="fu">hline_bottom</span>(<span class="at">border =</span> officer<span class="sc">::</span><span class="fu">fp_border</span>(<span class="at">width =</span> <span class="fl">1.5</span>), <span class="at">part =</span> <span class="st">"footer"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a>    flextable<span class="sc">::</span><span class="fu">hline_bottom</span>(<span class="at">border =</span> officer<span class="sc">::</span><span class="fu">fp_border</span>(<span class="at">width =</span> <span class="dv">2</span>), <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a>    flextable<span class="sc">::</span><span class="fu">autofit</span>()</span>
+<span id="cb2-19"><a href="#cb2-19"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># LOAD DATA ---------------------------------------------------------------</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co"># load the data previously generated from R script {which I am having trouble finding at the moment. 2024-05-08}</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co"># load the recoded variables and dervied data</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"derived_data"</span>, <span class="st">"peersonwheels_factors.rda"</span>))</span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"derived_data"</span>, <span class="st">"pow_factors.rda"</span>))</span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"derived_data"</span>, <span class="st">"pow_all_datasets.rda"</span>))</span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"derived_data"</span>, <span class="st">"pow_deduplicated.rda"</span>))</span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"derived_data"</span>, <span class="st">"hcv_ab_data.rda"</span>))</span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># load functions and scripts</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">"R/funs_tables.R"</span>))</span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">"R/funs_plots.R"</span>))</span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">"R/funs_graphics.R"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div style="page-break-after: always;"></div>
+<!-- new page -->
+<p><!-- make the page landscape --></p>
+<section id="tables" class="level2 unnumbered page-columns page-full">
+<h2 class="unnumbered anchored" data-anchor-id="tables">Tables</h2>
+<!-- Table 1 -->
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Summary characteristics ------------------------------------------------</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co"># [Table 1. Sociodemographic characteristics of participants in this study (n=) measured at baseline. ]</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>summary_table <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="at">include =</span> <span class="fu">c</span>(</span>
+<span id="cb4-6"><a href="#cb4-6"></a>      age,</span>
+<span id="cb4-7"><a href="#cb4-7"></a>      age_group,</span>
+<span id="cb4-8"><a href="#cb4-8"></a>      gender.factor,</span>
+<span id="cb4-9"><a href="#cb4-9"></a>      indigenous,</span>
+<span id="cb4-10"><a href="#cb4-10"></a>      homeless,</span>
+<span id="cb4-11"><a href="#cb4-11"></a>      prison_grouped_6month,</span>
+<span id="cb4-12"><a href="#cb4-12"></a>      curoat_yn.factor,</span>
+<span id="cb4-13"><a href="#cb4-13"></a>      oat_status,</span>
+<span id="cb4-14"><a href="#cb4-14"></a>      oat_med,</span>
+<span id="cb4-15"><a href="#cb4-15"></a>      drug_injecting,</span>
+<span id="cb4-16"><a href="#cb4-16"></a>      injany,</span>
+<span id="cb4-17"><a href="#cb4-17"></a>      injecting_experience,</span>
+<span id="cb4-18"><a href="#cb4-18"></a>      injecting_drug_group,</span>
+<span id="cb4-19"><a href="#cb4-19"></a>      injecting_frequency_grouped</span>
+<span id="cb4-20"><a href="#cb4-20"></a>    ),</span>
+<span id="cb4-21"><a href="#cb4-21"></a>    <span class="at">type =</span> <span class="fu">all_dichotomous</span>() <span class="sc">~</span> <span class="st">"dichotomous"</span>,</span>
+<span id="cb4-22"><a href="#cb4-22"></a>    <span class="at">missing =</span> <span class="st">"no"</span>,</span>
+<span id="cb4-23"><a href="#cb4-23"></a>    <span class="at">label =</span> <span class="fu">list</span>(age <span class="sc">~</span> <span class="st">"Age"</span>,</span>
+<span id="cb4-24"><a href="#cb4-24"></a>                 age_group <span class="sc">~</span> <span class="st">"Age group"</span>,</span>
+<span id="cb4-25"><a href="#cb4-25"></a>                 gender.factor <span class="sc">~</span> <span class="st">"Gender"</span>,</span>
+<span id="cb4-26"><a href="#cb4-26"></a>                 homeless <span class="sc">~</span> <span class="st">"Homeless"</span>,</span>
+<span id="cb4-27"><a href="#cb4-27"></a>                 indigenous <span class="sc">~</span> <span class="st">"Indigenous"</span>,</span>
+<span id="cb4-28"><a href="#cb4-28"></a>                 prison_grouped_6month <span class="sc">~</span> <span class="st">"Incarceration"</span>,</span>
+<span id="cb4-29"><a href="#cb4-29"></a>                 curoat_yn.factor <span class="sc">~</span> <span class="st">"Currently receiving OAT"</span>,</span>
+<span id="cb4-30"><a href="#cb4-30"></a>                 oat_status <span class="sc">~</span> <span class="st">"OAT experience"</span>,</span>
+<span id="cb4-31"><a href="#cb4-31"></a>                 drug_injecting <span class="sc">~</span> <span class="st">"Recent drug injecting (&lt; 6 months)"</span>,</span>
+<span id="cb4-32"><a href="#cb4-32"></a>                 injecting_drug_group <span class="sc">~</span> <span class="st">"Drug type inejcted"</span>,</span>
+<span id="cb4-33"><a href="#cb4-33"></a>                 injany <span class="sc">~</span> <span class="st">"Drug injecting history"</span>,</span>
+<span id="cb4-34"><a href="#cb4-34"></a>                 oat_med <span class="sc">~</span> <span class="st">"OAT medication"</span>,</span>
+<span id="cb4-35"><a href="#cb4-35"></a>                 injecting_frequency_grouped <span class="sc">~</span> <span class="st">"Recent drug injecting frequency (&lt; 30 days)"</span>),</span>
+<span id="cb4-36"><a href="#cb4-36"></a>    <span class="co"># percent = "row",</span></span>
+<span id="cb4-37"><a href="#cb4-37"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(<span class="fu">all_continuous</span>() <span class="sc">~</span> (<span class="st">"{median} ({p25} - {p75})"</span>), <span class="at">stat_0 =</span> <span class="st">"{n}"</span>)</span>
+<span id="cb4-38"><a href="#cb4-38"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-39"><a href="#cb4-39"></a>  <span class="fu">add_stat_label</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-40"><a href="#cb4-40"></a>  <span class="fu">bold_labels</span>()<span class="sc">%&gt;%</span></span>
+<span id="cb4-41"><a href="#cb4-41"></a>  <span class="fu">modify_header</span>(<span class="at">stat_0 =</span> <span class="st">"**Total no. of** </span><span class="sc">\n</span><span class="st">  **participants (n = {N})**"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-42"><a href="#cb4-42"></a>  <span class="fu">as_gt</span>()<span class="sc">%&gt;%</span></span>
+<span id="cb4-43"><a href="#cb4-43"></a><span class="fu">tab_style</span>(</span>
+<span id="cb4-44"><a href="#cb4-44"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">v_align =</span> <span class="st">"top"</span>),</span>
+<span id="cb4-45"><a href="#cb4-45"></a>    <span class="at">locations =</span> <span class="fu">cells_body</span>()</span>
+<span id="cb4-46"><a href="#cb4-46"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-47"><a href="#cb4-47"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb4-48"><a href="#cb4-48"></a>    <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"grey90"</span>),</span>
+<span id="cb4-49"><a href="#cb4-49"></a>    <span class="at">locations =</span> <span class="fu">cells_row_groups</span>()</span>
+<span id="cb4-50"><a href="#cb4-50"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-51"><a href="#cb4-51"></a>  <span class="fu">tab_footnote</span>(</span>
+<span id="cb4-52"><a href="#cb4-52"></a>    <span class="at">footnote =</span> <span class="st">"Data are n (%), or median (IQR). OAT=opioid agonist therapy. *Homelessness was defined as spending majority of nights in the last month in no usual residence, a shelter or squat. ^Includes methadone, buprenorphine, codeine and other pharmaceutical opioids"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-53"><a href="#cb4-53"></a>  <span class="fu">opt_footnote_marks</span>(<span class="at">marks =</span> <span class="st">"standard"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-54"><a href="#cb4-54"></a>  <span class="fu">opt_horizontal_padding</span>(<span class="dv">3</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-55"><a href="#cb4-55"></a>  <span class="fu">opts_theme</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-56"><a href="#cb4-56"></a>  <span class="fu">as_raw_html</span>()</span>
+<span id="cb4-57"><a href="#cb4-57"></a>  <span class="co"># tab_options(</span></span>
+<span id="cb4-58"><a href="#cb4-58"></a>    <span class="co"># quarto.disable_processing = TRUE)</span></span>
+<span id="cb4-59"><a href="#cb4-59"></a></span>
+<span id="cb4-60"><a href="#cb4-60"></a></span>
+<span id="cb4-61"><a href="#cb4-61"></a><span class="co"># make_tbl_quarto_robust &lt;- function(tbl) {</span></span>
+<span id="cb4-62"><a href="#cb4-62"></a><span class="co">#   # Get tbl html code (without the inline stuff)</span></span>
+<span id="cb4-63"><a href="#cb4-63"></a><span class="co">#   tbl_html &lt;- tbl |&gt;</span></span>
+<span id="cb4-64"><a href="#cb4-64"></a><span class="co">#     as_raw_html(inline_css = FALSE) </span></span>
+<span id="cb4-65"><a href="#cb4-65"></a>  </span>
+<span id="cb4-66"><a href="#cb4-66"></a><span class="co">#   # Find table id</span></span>
+<span id="cb4-67"><a href="#cb4-67"></a><span class="co">#   tbl_id &lt;-  str_match(tbl_html, 'id="(.*)"\\s')[,2] </span></span>
+<span id="cb4-68"><a href="#cb4-68"></a>  </span>
+<span id="cb4-69"><a href="#cb4-69"></a><span class="co">#   # Split html so that we only replace strings in the css part at first</span></span>
+<span id="cb4-70"><a href="#cb4-70"></a><span class="co">#   # That's important for performance</span></span>
+<span id="cb4-71"><a href="#cb4-71"></a><span class="co">#   split_html &lt;- tbl_html |&gt; </span></span>
+<span id="cb4-72"><a href="#cb4-72"></a><span class="co">#     str_split_1('&lt;table class="gt_table".{0,}&gt;')</span></span>
+<span id="cb4-73"><a href="#cb4-73"></a><span class="co">#   css_part &lt;- split_html[1] |&gt; </span></span>
+<span id="cb4-74"><a href="#cb4-74"></a><span class="co">#     str_split_1('&lt;style&gt;')</span></span>
+<span id="cb4-75"><a href="#cb4-75"></a>  </span>
+<span id="cb4-76"><a href="#cb4-76"></a><span class="co">#   # Create regex to add table id</span></span>
+<span id="cb4-77"><a href="#cb4-77"></a><span class="co">#   my_regex &lt;- str_c('(', tbl_id, ' )?(.* \\{)')</span></span>
+<span id="cb4-78"><a href="#cb4-78"></a><span class="co">#   replaced_css &lt;- css_part[2] |&gt;</span></span>
+<span id="cb4-79"><a href="#cb4-79"></a><span class="co">#     # Make global html changes more specific</span></span>
+<span id="cb4-80"><a href="#cb4-80"></a><span class="co">#     str_replace_all('html \\{', str_c(tbl_id, ' .gt_table {')) |&gt; </span></span>
+<span id="cb4-81"><a href="#cb4-81"></a><span class="co">#     # Make changes to everything specific to the table id</span></span>
+<span id="cb4-82"><a href="#cb4-82"></a><span class="co">#     str_replace_all(my_regex, str_c('\\#', tbl_id, ' \\2')) |&gt; </span></span>
+<span id="cb4-83"><a href="#cb4-83"></a><span class="co">#     # Replace duplicate names </span></span>
+<span id="cb4-84"><a href="#cb4-84"></a><span class="co">#     str_replace_all(</span></span>
+<span id="cb4-85"><a href="#cb4-85"></a><span class="co">#       str_c('\\#', tbl_id, ' \\#', tbl_id),</span></span>
+<span id="cb4-86"><a href="#cb4-86"></a><span class="co">#       str_c('\\#', tbl_id)</span></span>
+<span id="cb4-87"><a href="#cb4-87"></a><span class="co">#     )</span></span>
+<span id="cb4-88"><a href="#cb4-88"></a>  </span>
+<span id="cb4-89"><a href="#cb4-89"></a><span class="co">#   # Put split html back together</span></span>
+<span id="cb4-90"><a href="#cb4-90"></a><span class="co">#   str_c(</span></span>
+<span id="cb4-91"><a href="#cb4-91"></a><span class="co">#     css_part[1], '&lt;style&gt;', </span></span>
+<span id="cb4-92"><a href="#cb4-92"></a><span class="co">#     replaced_css, '&lt;table class="gt_table"&gt;', </span></span>
+<span id="cb4-93"><a href="#cb4-93"></a><span class="co">#     split_html[2]</span></span>
+<span id="cb4-94"><a href="#cb4-94"></a><span class="co">#   ) |&gt; </span></span>
+<span id="cb4-95"><a href="#cb4-95"></a><span class="co">#     # Rename all gt_* classes to new_gt_*</span></span>
+<span id="cb4-96"><a href="#cb4-96"></a><span class="co">#     str_replace_all('(\\.|class="| )gt', '\\1new_gt') |&gt; </span></span>
+<span id="cb4-97"><a href="#cb4-97"></a><span class="co">#     # Reformat as html</span></span>
+<span id="cb4-98"><a href="#cb4-98"></a><span class="co">#     html()</span></span>
+<span id="cb4-99"><a href="#cb4-99"></a><span class="co"># }</span></span>
+<span id="cb4-100"><a href="#cb4-100"></a></span>
+<span id="cb4-101"><a href="#cb4-101"></a><span class="co"># library(knitr)</span></span>
+<span id="cb4-102"><a href="#cb4-102"></a><span class="co"># knit_print.gt &lt;- function(x, ...) {</span></span>
+<span id="cb4-103"><a href="#cb4-103"></a><span class="co">#   stringr::str_c(</span></span>
+<span id="cb4-104"><a href="#cb4-104"></a><span class="co">#     "&lt;div style='all:initial';&gt;\n", </span></span>
+<span id="cb4-105"><a href="#cb4-105"></a><span class="co">#     make_tbl_quarto_robust(x), </span></span>
+<span id="cb4-106"><a href="#cb4-106"></a><span class="co">#     "\n&lt;/div&gt;"</span></span>
+<span id="cb4-107"><a href="#cb4-107"></a><span class="co">#   ) |&gt; </span></span>
+<span id="cb4-108"><a href="#cb4-108"></a><span class="co">#     knitr::asis_output()</span></span>
+<span id="cb4-109"><a href="#cb4-109"></a>    </span>
+<span id="cb4-110"><a href="#cb4-110"></a><span class="co"># }</span></span>
+<span id="cb4-111"><a href="#cb4-111"></a><span class="co"># registerS3method(</span></span>
+<span id="cb4-112"><a href="#cb4-112"></a><span class="co">#   "knit_print", 'gt_tbl', knit_print.gt, </span></span>
+<span id="cb4-113"><a href="#cb4-113"></a><span class="co">#   envir = asNamespace("gt") </span></span>
+<span id="cb4-114"><a href="#cb4-114"></a><span class="co">#   # important to overwrite {gt}s knit_print</span></span>
+<span id="cb4-115"><a href="#cb4-115"></a><span class="co"># )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<!-- Table 1 -->
+<div id="tbl-summary-characteristics" class="cell quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-tbl figure page-columns page-full">
+<div aria-describedby="tbl-summary-characteristics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-tbl margin-caption" id="tbl-summary-characteristics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Baseline characteristics.
+</figcaption>
+</figure>
+</div>
+<!-- Table 2 -->
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Summary characteristics of HCV variables stratified by injecting history ---------------------------------------------------------------------------</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co"># [Table 2. Sociodemographic characteristics of participants in this study (n ]</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co"># Table of number of RNA and HCV tests</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="co"># Participants ever and all tests of HCV (ab and RNA)</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a>summary_stratified_by_injecting <span class="ot">&lt;-</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a>  data <span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb5-10"><a href="#cb5-10"></a>    <span class="at">by =</span> injecting_experience,</span>
+<span id="cb5-11"><a href="#cb5-11"></a>    <span class="at">include =</span> <span class="fu">c</span>(</span>
+<span id="cb5-12"><a href="#cb5-12"></a>      ever_hcv_test,</span>
+<span id="cb5-13"><a href="#cb5-13"></a>      ever_hcvab_test,</span>
+<span id="cb5-14"><a href="#cb5-14"></a>      hcvrna_test_ever,</span>
+<span id="cb5-15"><a href="#cb5-15"></a>      hcv_status,</span>
+<span id="cb5-16"><a href="#cb5-16"></a>      hcv_treat_ever,</span>
+<span id="cb5-17"><a href="#cb5-17"></a>      hcvab_test_receieved,</span>
+<span id="cb5-18"><a href="#cb5-18"></a>      hcvab_test_result,</span>
+<span id="cb5-19"><a href="#cb5-19"></a>      hcvrna_test_receieved,</span>
+<span id="cb5-20"><a href="#cb5-20"></a>      hcv_rna_result,</span>
+<span id="cb5-21"><a href="#cb5-21"></a>      treat_init,</span>
+<span id="cb5-22"><a href="#cb5-22"></a>      has_hcv_antibodies</span>
+<span id="cb5-23"><a href="#cb5-23"></a>    ),</span>
+<span id="cb5-24"><a href="#cb5-24"></a>    <span class="at">label =</span> <span class="fu">list</span>(</span>
+<span id="cb5-25"><a href="#cb5-25"></a>      ever_hcv_test <span class="sc">~</span> <span class="st">"Ever received an HCV test (either RNA or antibody)"</span>,</span>
+<span id="cb5-26"><a href="#cb5-26"></a>      ever_hcvab_test <span class="sc">~</span> <span class="st">"Self-reported history of ever receiving an</span></span>
+<span id="cb5-27"><a href="#cb5-27"></a><span class="st">      HCV antibody test"</span>,</span>
+<span id="cb5-28"><a href="#cb5-28"></a>      hcvrna_test_ever <span class="sc">~</span> <span class="st">"Self-reported history of ever receiving an HCV RNA test"</span>,</span>
+<span id="cb5-29"><a href="#cb5-29"></a>      hcv_status <span class="sc">~</span> <span class="st">"Self-reported HCV infection status"</span>,</span>
+<span id="cb5-30"><a href="#cb5-30"></a>      hcv_treat_ever <span class="sc">~</span> <span class="st">"Self-reported having ever received HCV treatment"</span>,</span>
+<span id="cb5-31"><a href="#cb5-31"></a>      hcvab_test_receieved <span class="sc">~</span> <span class="st">"HCV antibody test received"</span>,</span>
+<span id="cb5-32"><a href="#cb5-32"></a>      hcvab_test_result <span class="sc">~</span> <span class="st">"HCV antibody test result"</span>,</span>
+<span id="cb5-33"><a href="#cb5-33"></a>      hcvrna_test_receieved <span class="sc">~</span> <span class="st">"HCV RNA test received"</span>,</span>
+<span id="cb5-34"><a href="#cb5-34"></a>      hcv_rna_result <span class="sc">~</span> <span class="st">"HCV RNA test result"</span>,</span>
+<span id="cb5-35"><a href="#cb5-35"></a>      treat_init <span class="sc">~</span> <span class="st">"Initiatied treatment"</span></span>
+<span id="cb5-36"><a href="#cb5-36"></a>    ),</span>
+<span id="cb5-37"><a href="#cb5-37"></a>    <span class="at">missing =</span> <span class="st">"no"</span>,</span>
+<span id="cb5-38"><a href="#cb5-38"></a>    <span class="at">percent =</span> <span class="st">"row"</span>,</span>
+<span id="cb5-39"><a href="#cb5-39"></a>    <span class="at">statistic =</span> <span class="fu">all_continuous</span>() <span class="sc">~</span> (<span class="st">"{median} ({p25} - {p75})"</span>),</span>
+<span id="cb5-40"><a href="#cb5-40"></a>    <span class="at">digits =</span> <span class="fu">list</span>(<span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="fu">c</span>(<span class="dv">0</span>))</span>
+<span id="cb5-41"><a href="#cb5-41"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-42"><a href="#cb5-42"></a>  <span class="co"># add_p() %&gt;%</span></span>
+<span id="cb5-43"><a href="#cb5-43"></a>  <span class="fu">add_overall</span>(<span class="at">statistic =</span> <span class="fu">list</span>(</span>
+<span id="cb5-44"><a href="#cb5-44"></a>    <span class="fu">all_continuous</span>()  <span class="sc">~</span> <span class="st">"{median} ({p25} - {p75})"</span>,</span>
+<span id="cb5-45"><a href="#cb5-45"></a>    <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"{n}"</span></span>
+<span id="cb5-46"><a href="#cb5-46"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb5-47"><a href="#cb5-47"></a>  <span class="fu">modify_header</span>(</span>
+<span id="cb5-48"><a href="#cb5-48"></a>    <span class="at">stat_0 =</span> <span class="st">"**Total no. of** </span><span class="sc">\n</span><span class="st">  **participants (n = {N})**"</span>,</span>
+<span id="cb5-49"><a href="#cb5-49"></a>    <span class="at">stat_1 =</span> <span class="st">"**Injected (&lt; 6 months)** </span><span class="sc">\n</span><span class="st">  **(n = {n})**"</span>,</span>
+<span id="cb5-50"><a href="#cb5-50"></a>    <span class="at">stat_2 =</span> <span class="st">"**Injected (&gt; 6 months)** </span><span class="sc">\n</span><span class="st">  **(n = {n})**"</span>,</span>
+<span id="cb5-51"><a href="#cb5-51"></a>    <span class="at">stat_3 =</span> <span class="st">"**Never injected** </span><span class="sc">\n</span><span class="st">  **(n = {n})**"</span></span>
+<span id="cb5-52"><a href="#cb5-52"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-53"><a href="#cb5-53"></a>  <span class="fu">modify_footnote</span>(<span class="at">update =</span> <span class="fu">everything</span>() <span class="sc">~</span> <span class="cn">NA</span>, <span class="at">abbreviation =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-54"><a href="#cb5-54"></a>  <span class="fu">remove_row_type</span>(<span class="at">variable =</span> hcvab_test_result,</span>
+<span id="cb5-55"><a href="#cb5-55"></a>                  <span class="at">type =</span> <span class="st">"level"</span>,</span>
+<span id="cb5-56"><a href="#cb5-56"></a>                  <span class="at">level_value =</span> <span class="st">"Invalid"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-57"><a href="#cb5-57"></a>  <span class="fu">bold_labels</span>()  </span>
+<span id="cb5-58"><a href="#cb5-58"></a></span>
+<span id="cb5-59"><a href="#cb5-59"></a><span class="co">#  As flextable</span></span>
+<span id="cb5-60"><a href="#cb5-60"></a></span>
+<span id="cb5-61"><a href="#cb5-61"></a><span class="co"># summary_stratified_by_injecting_ft &lt;- summary_stratified_by_injecting %&gt;%</span></span>
+<span id="cb5-62"><a href="#cb5-62"></a><span class="co">#   as_flex_table()%&gt;%</span></span>
+<span id="cb5-63"><a href="#cb5-63"></a><span class="co">#   theme_apa() %&gt;%</span></span>
+<span id="cb5-64"><a href="#cb5-64"></a><span class="co">#   line_spacing(part = "all") %&gt;%</span></span>
+<span id="cb5-65"><a href="#cb5-65"></a><span class="co">#   padding(padding.top = 5, padding.bottom = 5)</span></span>
+<span id="cb5-66"><a href="#cb5-66"></a><span class="co"># summary_stratified_by_injecting_ft  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="tbl-summary-stratified-by-injecting" class="cell quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-tbl figure page-columns page-full">
+<div aria-describedby="tbl-summary-stratified-by-injecting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-tbl margin-caption" id="tbl-summary-stratified-by-injecting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Baseline characteristics stratified by injecting experience.
+</figcaption>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="figures" class="level2 unnumbered page-columns page-full">
+<h2 class="unnumbered anchored" data-anchor-id="figures">Figures</h2>
+<!--  -->
+<!-- Figures can go here. -->
+<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/profile.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Study profile.
+</figcaption>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="../images/pow-sampling-sites.PNG" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Map of Australia with the individual sampling sites depicted by a filled circle with colour corresponding to a local health district</figcaption>
+</figure>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#| out-width: 100%</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="co">#| fig-pos: h</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="co"># knitr::include_graphics("C:/Users/MJstowe/OneDrive - UNSW/Documents/pow.study/analysis/figures/peerbus-sampling-map.png") </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+<div class="cell" data-apa-twocolumn="true">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># knitr::include_graphics("C:/Users/MJstowe/OneDrive - UNSW/Documents/pow.study/analysis/figures/peerbus-sampling-map-lhd.png")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<!-- Figure 1: Study profile -->
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># knitr::include_graphics(here("manuscript/profile.png"))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
